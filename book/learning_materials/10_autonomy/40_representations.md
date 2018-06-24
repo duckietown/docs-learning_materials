@@ -8,9 +8,9 @@ Required Reading: The following assumes working knowledge of 2D and 3D Cartesian
 
 See: [Coordinate systems](#coordinate_systems)
 
-See: [Reference frames](#reference_frames)
+See: [Reference frames](+preliminaries#reference_frames)
 
-See: [Coordinate transformations](#transformations).
+See: [Coordinate transformations](+preliminaries#transformations).
 
 </div>
 
@@ -69,7 +69,7 @@ Importantly, the exteroceptive and proprioceptive sensor measurements from which
 
 TODO: Discuss conventions
 
-The state of the robot typically includes its *pose* $\pose_t$, which specifies the position and orientation of a coordinate frame affixed to the robot relative to a fixed global coordinate frame commonly referred to as the "world frame". The pose then defines the rigid-body [rigid-body transformation](#transformations) between the two reference frames.
+The state of the robot typically includes its *pose* $\pose_t$, which specifies the position and orientation of a coordinate frame affixed to the robot relative to a fixed global coordinate frame commonly referred to as the "world frame". The pose then defines the rigid-body [rigid-body transformation](+preliminaries#transformations) between the two reference frames.
 
 For rigid-body robots that operate in a plane ($\reals^2$), the pose $\pose \in \SEtwo$ consists of the Cartesian coordinates $(x,y)$ that specify the robot's position and the angle $\theta$ that defines the robot's orientation (yaw). For robots in $\reals^3$, including some ground platforms, aerial vehicles, and underwater vehicles, the pose $\pose \in \SEthree$ consists of three Cartesian coordinates $(x, y, z)$ that encode the robot's position, and three Euler angles $\phi, \theta, \psi$ that specify the robot's orientation.
 

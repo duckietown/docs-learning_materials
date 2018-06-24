@@ -68,7 +68,7 @@ An *extrinsic calibration* is required to determine the external configuration o
 \end{definition}
 
 <div class="check" markdown="1">
-For more information about reference frames check out [](#reference_frames)
+For more information about reference frames check out [](+preliminaries#reference_frames)
 </div>
 
 Calibration is very important consideration in robotics. In the field, the most advanced algorithms will fail if sensors are not properly calibrated.

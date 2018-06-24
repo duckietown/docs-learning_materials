@@ -1,6 +1,6 @@
 # Chapter template {#theory-chapter-template status=ready}
 
-Theory chapters benefit from a standardized exposition. Here, we define the template for these chapters. Rememeber to check [](#markduck) for a comprehensive and up-to-date list of Duckiebook supported features.
+Theory chapters benefit from a standardized exposition. Here, we define the template for these chapters. Remember to check [](+duckumentation#markduck) for a comprehensive and up-to-date list of Duckiebook supported features.
 
 ## Example Title: PID control {#pid-example-theory-label}
 
@@ -18,7 +18,7 @@ Required Reading: Insert here a list of topics and suggested resources related t
 
 Requires: Terminology: [autonomy overview](#autonomy-overview)
 
-Requires: System Modeling: [basic kinematics](#intro-kinematics), [basic dynamics](#intro-dynamics), [linear algebra](#linear_algebra), [State space representations](), [Linear Time Invariant Systems]()
+Requires: System Modeling: [basic kinematics](+preliminaries#intro-kinematics), [basic dynamics](+preliminaries#intro-dynamics), [linear algebra](+preliminaries#linear_algebra), [State space representations](), [Linear Time Invariant Systems]()
 
 </div>
 

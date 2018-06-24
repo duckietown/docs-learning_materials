@@ -12,11 +12,11 @@ Different methods can be followed to obtain the Duckiebot model, namely the Lagr
 
 <div class='requirements' markdown="1">
 
-Requires:[k:reference_frames](#reference_frames) (inertial, body), [k:intro-transformations](#transformations) (Cartesian, polar)
+Requires:[k:reference_frames](+preliminaries#reference_frames) (inertial, body), [k:intro-transformations](+preliminaries#transformations) (Cartesian, polar)
 
-Requires: [k:intro-kinematics](#intro-kinematics)
+Requires: [k:intro-kinematics](+preliminaries#intro-kinematics)
 
-Requires: [k:intro-dynamics](#intro-dynamics)
+Requires: [k:intro-dynamics](+preliminaries#intro-dynamics)
 
 Suggested: [k:intro-ODEs-to-LTIsys](#intro-ode2lti)
 
@@ -28,7 +28,7 @@ Result: k:diff-drive-robot-model
 
 TODO: relabel inertial frame -> local frame; $(\cdot)^I \rightarrow (\cdot)^L$
 
-We first briefly recapitulate on the [reference frames](#reference_frames) that we will use to model the Duckiebot, with the intent of introducing the notation used throughout this chapter. It is important to note that we restrict the current analysis to the plane, so all of the following in defined in $\reals^2$.
+We first briefly recapitulate on the [reference frames](+preliminaries#reference_frames) that we will use to model the Duckiebot, with the intent of introducing the notation used throughout this chapter. It is important to note that we restrict the current analysis to the plane, so all of the following in defined in $\reals^2$.
 
 To describe the behavior of a Duckiebot three reference frames will be used:
 
@@ -649,7 +649,7 @@ The content of this chapter is taken from [](#bib:Dudek10).
 
 <div class='requirements' markdown="1">
 
-Requires: [k:intro-kinematics](#intro-kinematics),
+Requires: [k:intro-kinematics](+preliminaries#intro-kinematics),
 
 Requires:[k:coordinate-systems](#coordinate_systems)
 

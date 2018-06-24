@@ -5,7 +5,7 @@ Assigned: Andrea Censi
 
 <div class='requirements' markdown='1'>
 
-Requires: Understanding of time series. See: [](#time-series).
+Requires: Understanding of time series. See: [](+preliminaries#time-series).
 
 Result: Understanding of the basic concepts of
 event-based processing and why it is different from periodic processing.
@@ -27,7 +27,7 @@ In standard signal processing, the data is assumed to arrive periodically
 with a certain fixed interval; in robotics, it is common to work
 with streams of data that arrive irregularly.
 
-As per [](#def:time-series-def), a time series is
+As per [](+preliminaries#def:time-series-def), a time series is
 a sequence $\tup{t_k, x_k} \in \Time \times \aset{X}$, where $\Time$ is
 time and $\aset{X}$ is the domain in which the signals take values.
 
@@ -95,7 +95,7 @@ or event-based processing? Here's a few things to keep in mind.
 To have truly periodic processing, you need to have an operating
 system that is "real-time".
 
-See: [](#RTOS)
+See: [](+preliminaries#RTOS)
 
 A real-time operating system will be able to schedule processing
 of data at given intervals.
