@@ -18,7 +18,7 @@ Requires: [k:intro-kinematics](+preliminaries#intro-kinematics)
 
 Requires: [k:intro-dynamics](+preliminaries#intro-dynamics)
 
-Suggested: [k:intro-ODEs-to-LTIsys](#intro-ode2lti)
+Suggested: [k:intro-ODEs-to-LTIsys](+preliminaries#intro-ode2lti)
 
 Result: k:diff-drive-robot-model
 
@@ -651,7 +651,7 @@ The content of this chapter is taken from [](#bib:Dudek10).
 
 Requires: [k:intro-kinematics](+preliminaries#intro-kinematics),
 
-Requires:[k:coordinate-systems](#coordinate_systems)
+Requires:[k:coordinate-systems](+preliminaries#coordinate_systems)
 
 Result: k:car-kinematics
 

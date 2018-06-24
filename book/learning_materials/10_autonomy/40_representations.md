@@ -6,7 +6,7 @@ Assigned: Matt Walter
 
 Required Reading: The following assumes working knowledge of 2D and 3D Cartesian coordinate systems, reference frames, and coordinate transformations. If you are not familiar with these topics, please see the following preliminary chapters.
 
-See: [Coordinate systems](#coordinate_systems)
+See: [Coordinate systems](+preliminaries#coordinate_systems)
 
 See: [Reference frames](+preliminaries#reference_frames)
 
