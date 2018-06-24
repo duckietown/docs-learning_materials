@@ -178,7 +178,7 @@ that where defined
 
 We now look at the Duckietown solution for the previous problems.
 
-The code is in [`EasyAlgo`](#easy_algo).
+The code is in [`EasyAlgo`](+code_docs#easy_algo).
 
 
 
