@@ -160,7 +160,7 @@ More Duckiebot related examples
 
 ## Pointers to Exercises {#theory-chapter-template-exercises-pointers}
 
-Here we just add references to the suggested exercises, defined in the appropriate [exercise chapters](#book:exercises).
+Here we just add references to the suggested exercises, defined in the appropriate [exercise chapters](+exercises#exercises).
 
 
 ## Conclusions
