@@ -124,7 +124,7 @@ Recommended: If [](#fig:nested_control) is **VERY** mysterious to you, then you 
 
 In this case we show three loops. At the outer loop, some goal state is provided. The actual state of the robot is used as the feedback. The controller is the block labeled `Navigation and Motion Planning`. The job of this block is generate a **feasible path** from the current state to the goal state. This is executed in **configuration space** rather than the state space (although these two spaces may happen to be the same they are fundamentally conceptually different.
 
-<div figure-id="fig:navigation">
+<div figure-id="fig:navigation-duckietown">
     <figcaption>Navigation in Duckietown</figcaption>
     <dtvideo src="vimeo:232333925"/>
 </div>
@@ -176,9 +176,9 @@ One key requirement is the ability to detect objects in the world such as but no
 
 ### SLAM {#slam}
 
-The simultaneous localization and mapping (SLAM) problem involves simultaneously estimating not only the robot state but also the **map** at the same time, and is a fundamental capability for mobile robotics. In autonomous driving, generally the most common application for SLAM is actual in the map-building task. Once a map is built then it can be pre-loaded and then used for pure localization. A demonstration of this in Duckietown is shown in [](#fig:localization).
+The simultaneous localization and mapping (SLAM) problem involves simultaneously estimating not only the robot state but also the **map** at the same time, and is a fundamental capability for mobile robotics. In autonomous driving, generally the most common application for SLAM is actual in the map-building task. Once a map is built then it can be pre-loaded and then used for pure localization. A demonstration of this in Duckietown is shown in [](#fig:localization-SLAM).
 
-<div figure-id="fig:localization">
+<div figure-id="fig:localization-SLAM">
     <figcaption>Localization in Duckietown</figcaption>
     <dtvideo src="vimeo:232333888"/>
 </div>
