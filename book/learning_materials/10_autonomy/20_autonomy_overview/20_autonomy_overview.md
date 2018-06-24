@@ -146,7 +146,7 @@ We will also investigate some more advanced non-linear control policies such as 
 
 ### Actuation {#actuation}
 
-The very innermost control loop deals with actually tracking the correct voltage  to be sent to the motors. This is generally executed as close to the hardware level as possible. For example we have a `Stepper Motor HAT` [See the parts list](#acquiring-parts-c0).
+The very innermost control loop deals with actually tracking the correct voltage  to be sent to the motors. This is generally executed as close to the hardware level as possible. For example we have a `Stepper Motor HAT` [See the parts list](+opmanual_duckiebot#acquiring-parts-c0).
 
 
 
