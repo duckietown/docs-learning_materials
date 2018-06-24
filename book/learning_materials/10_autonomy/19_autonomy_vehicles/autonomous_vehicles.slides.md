@@ -1,4 +1,4 @@
-# Autonomous Vehicles {#autonomous-vehicles-slides status=draft type=slides nonumber=1 label-name="🎦 Autonomous Vehicles"}
+# Autonomous Vehicles {#autonomous-vehicles-slides status=draft type=slides nonumber=1}
 
 Maintainer: Andrea Censi
 
