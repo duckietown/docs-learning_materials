@@ -10,7 +10,7 @@ Traditional ways of object classification extract features or descriptors for di
 
 An object classification algorithm takes images as input and output what objects it contains. For simplification, HOG plus two-class (binary) classifiers are explained because it has the best performance in traditional algorithms. 
 
-## Steps in object classification
+## Traditional Steps in object classification
 
 The main pipeline is shown as following:
 <figure class="stretch">
@@ -34,7 +34,9 @@ The general principle is that learning algorithms treat feature vectors as point
 
 Support Vector Machine (SVM) is one of the most popular supervised binary classification algorithm. It tries to find the hyperplane that can maximize the margin of two classes. It is also widly used combined with HOG for better accuracy in object classification. 
 
+## Deep Learning in object classification
 
+Except traditional methods, deep learning approaches perform an astoundingly better accuracy in computer vision. Details will be illustrated more in the next module of object detection because it includes the task of object classification. 
 
 
 
