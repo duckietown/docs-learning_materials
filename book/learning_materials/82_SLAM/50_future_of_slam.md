@@ -27,27 +27,62 @@ There are a variety of vision sensors around, which output different types of in
 
 *Monocular cameras* are the typical cameras you can find in a photography or smart phone camera. They create 2D images of the environment.
 
-<figure>
-    <figcaption>Monocular Camera</figcaption>
-    <img style='width:8em' src="figures/phonecam.pdf"/>
+
+<figure class="flow-subfigures">  
+    <figcaption>Monocular cameras.</figcaption>
+    <figure>
+        <figcaption>Example of a monocular camera.</figcaption>
+        <img style='width:14em' src="figures/monocular_camera.png"/>
+    </figure>
+    <figure>  
+        <figcaption>Example of a video produced by a monocular camera.</figcaption>
+        <iframe style='width: 20em; height:auto' src="https://www.youtube.com/embed/_rF2eOOEzEw" frameborder="0" allowfullscreen="true"></iframe>
+    </figure>
 </figure>
-TODO: image from monocular camera
+
 
 *Stero cameras* are cameras which make use of two lenses, similarly to what humans do. They are able to deduce depth from the two images taken and thus output 3D images.
 
 
-<figure>
-    <figcaption>Stereo Camera</figcaption>
-    <img style='width:8em' src="figures/stereo_camera.pdf"/>
+<figure class="flow-subfigures">  
+    <figcaption>Stereo cameras.</figcaption>
+    <figure>
+        <figcaption>Example of a stereo camera.</figcaption>
+        <img style='width:14em' src="figures/stereo_camera.png"/>
+    </figure>
+    <figure>  
+        <figcaption>Example of a video produced by a stereo camera.</figcaption>
+        <iframe style='width: 20em; height:auto' src="https://www.youtube.com/embed/AFH2yN3rM78" frameborder="0" allowfullscreen="true"></iframe>
+    </figure>
 </figure>
-TODO: image from stereo camera
 
 *RGB-D cameras* are cameras which usually make use of a depth sensor in addition to the lens. By doing so, they are also able to produce 3D images.
 
-TODO: image from rgb-d camera
+<figure class="flow-subfigures">  
+    <figcaption>RGB-D cameras.</figcaption>
+    <figure>
+        <figcaption>Example of an RGB-D camera.</figcaption>
+        <img style='width:14em' src="figures/rgbd_camera.png"/>
+    </figure>
+    <figure>  
+        <figcaption>Example of a video produced by an RGB-D camera.</figcaption>
+        <iframe style='width: 20em; height:auto' src="https://www.youtube.com/embed/3oKVSe5pZhY" frameborder="0" allowfullscreen="true"></iframe>
+    </figure>
+</figure>
 
 *LIDAR sensors* make use of pulsed laser lights to measure free distances around the environment. They create a 3D representation of the environment but have no RGB information.
-TODO: image from LIDAR sensor
+
+<figure class="flow-subfigures">  
+    <figcaption>LIDAR sensors.</figcaption>
+    <figure>
+        <figcaption>Example of LIDAR modules.</figcaption>
+        <img style='width:14em' src="figures/lidar.png"/>
+    </figure>
+    <figure>  
+        <figcaption>Example of a video produced by LIDAR module.</figcaption>
+        <iframe style='width: 20em; height:auto' src="https://www.youtube.com/embed/KxWrWPpSE8I" frameborder="0" allowfullscreen="true"></iframe>
+    </figure>
+</figure>
 
 These sensors are the most popular in current SLAM systems, even though other types (event-based cameras) for example exist and might be useful in future SLAM systems.
 
