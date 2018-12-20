@@ -13,11 +13,11 @@ To do so first requires representing the environment around the robot through a 
     <figcaption>An example of mapping and localization</figcaption>
     <figure>
         <figcaption>Example of Mapping:</figcaption>
-        <img style='width:8em' src="figures/mapping.png"/>
+        <img style='width:5em' src="figures/mapping.png"/>
     </figure>
     <figure>
         <figcaption>Example of Localization:</figcaption>
-        <img style='width:8em' src="figures/localization.png"/>
+        <img style='width:5em' src="figures/localization.png"/>
     </figure>
   </figure>
 These two processes depend on each other, and have to be performed simultaneously and continuously through the duration of the task, leading to _*S*imultaneous *L*ocalization *A*nd *M*apping_.
