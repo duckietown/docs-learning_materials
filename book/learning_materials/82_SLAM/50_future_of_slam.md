@@ -9,8 +9,17 @@ In many cases, a meaningful task would need for the robot to navigate and intera
 
 To do so first requires representing the environment around the robot through a _mapping_ process. As the robot moves around, it will also need to perform a process called _localization_.
 
-TODO: 2 figures illustrating mapping and localization
-
+<figure class="flow-subfigures">  
+    <figcaption>Mapping.</figcaption>
+    <figure>
+        <figcaption>Example of Mapping.</figcaption>
+        <img style='width:14em' src="figures/mapping.png"/>
+    </figure>
+    <figure>
+        <figcaption>Example of Localization.</figcaption>
+        <img style='width:14em' src="figures/localization.png"/>
+    </figure>
+  </figure>
 These two processes depend on each other, and have to be performed simultaneously and continuously through the duration of the task, leading to _*S*imultaneous *L*ocalization *A*nd *M*apping_.
 
 Seeing that the mapping process makes use the estimated position, and that the position is estimated with respect of the built map, this problem is hard and can be seen as a "chicken and egg" problem.
