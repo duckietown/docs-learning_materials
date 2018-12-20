@@ -27,10 +27,19 @@ There are a variety of vision sensors around, which output different types of in
 
 *Monocular cameras* are the typical cameras you can find in a photography or smart phone camera. They create 2D images of the environment.
 
+<figure>
+    <figcaption>Monocular Camera</figcaption>
+    <img style='width:8em' src="phonecam.pdf"/>
+</figure>
 TODO: image from monocular camera
 
 *Stero cameras* are cameras which make use of two lenses, similarly to what humans do. They are able to deduce depth from the two images taken and thus output 3D images.
 
+
+<figure>
+    <figcaption>Stereo Camera</figcaption>
+    <img style='width:8em' src="stereo_camera.jpg"/>
+</figure>
 TODO: image from stereo camera
 
 *RGB-D cameras* are cameras which usually make use of a depth sensor in addition to the lens. By doing so, they are also able to produce 3D images.
