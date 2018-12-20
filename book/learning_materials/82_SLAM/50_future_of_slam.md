@@ -29,7 +29,7 @@ There are a variety of vision sensors around, which output different types of in
 
 <figure>
     <figcaption>Monocular Camera</figcaption>
-    <img style='width:8em' src="figures/phonecam.pdf"/>
+    <img style='width:8em' src="phonecam.pdf"/>
 </figure>
 TODO: image from monocular camera
 
