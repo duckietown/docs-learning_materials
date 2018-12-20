@@ -19,12 +19,28 @@ TODO: videos of duckiebot lane following with/without external information
 ## SLAM today
 There are several variants of SLAM. We are going to focus on the most popular one: Visual SLAM. Visual SLAM is the process of performing SLAM using vision sensors as primary inputs.
 
-### Map types ???
-
 ### Cameras typically used
-There are a variety of vision sensors around, which output different types of informations.
+Visual SLAM usually relies on different types of cameras.
+There are a variety of vision sensors around, which output different types of informations, here are a few examples :
 
-: monocular cameras, stereo cameras, depth cameras, and laser scanners.
+*Monocular cameras* are the typical cameras you can find in a photography or smart phone camera. They create 2D images of the environment.
+
+TODO: image from monocular camera
+
+*Stero cameras* are cameras which make use of two lenses, similarly to what humans do. They are able to deduce depth from the two images taken and thus output 3D images.
+
+TODO: image from stereo camera
+
+*RGB-D cameras* are cameras which usually make use of a depth sensor in addition to the lens. By doing so, they are also able to produce 3D images.
+
+TODO: image from rgb-d camera
+
+*LIDAR sensors* make use of pulsed laser lights to measure free distances around the environment. They create a 3D representation of the environment but have no RGB information.
+TODO: image from LIDAR sensor
+
+These sensors are the most popular in current SLAM systems, even though other types (event-based cameras) for example exist and might be useful in future SLAM systems.
+
+
 ### Examples of successes
 
 ## Issues with current solutions
