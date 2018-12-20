@@ -97,9 +97,24 @@ TODO: Figures showing the images from the slides and legends describing what wou
 
 
 ## The road to Spatial AI
+As we have seen, current SLAM solutions have some issues, and SLAM still needs some work on. A recent paper from A. Davison (TODO cite paper properly) introduced a new term: "*Spatial AI*". This paper describes considerations on where SLAM should be heading, and what we should aim at having.
 
 ### What is Spatial AI
+Even though "Spatial AI" is a new term, it is not far from being simply a rebranding of what is also called "Semantic SLAM".
+TODO: Image of the wall crack
+AI usually leads to building good representations. Similarly, the core idea of Spatial AI is to have the right spatial representations about the space in which the robot operates. Spatial AI superseeds SLAM in the sense that it is more general than simple "localization and mapping".
+
+Here is an example of a situation where Spatial AI would be useful :
+
+TODO: video of roomba + explanation.
+
 
 ### Differences with Geometric SLAM
+On different levels Spatial AI differs with geometric SLAM.
+We resume the main differences in the following table :
+
+TODO: Table from slides. Maybe detail a bit more some points under ?
 
 ### Recent works towards Spatial AI
+
+TODO: All videos from the slides + small explanations with each of them
