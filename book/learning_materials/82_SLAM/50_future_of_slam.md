@@ -13,20 +13,32 @@ To do so first requires representing the environment around the robot through a 
     <figcaption>An example of mapping and localization</figcaption>
     <figure>
         <figcaption>Example of Mapping:</figcaption>
-        <img style='width:5em' src="figures/mapping.png"/>
+        <img style='width:10em; height:10em' src="figures/mapping.png"/>
     </figure>
     <figure>
         <figcaption>Example of Localization:</figcaption>
-        <img style='width:5em' src="figures/localization.png"/>
+        <img style='width:10em; height:10em' src="figures/localization.png"/>
     </figure>
   </figure>
 These two processes depend on each other, and have to be performed simultaneously and continuously through the duration of the task, leading to _*S*imultaneous *L*ocalization *A*nd *M*apping_.
 
-Seeing that the mapping process makes use the estimated position, and that the position is estimated with respect of the built map, this problem is hard and can be seen as a "chicken and egg" problem.
+Seeing that the mapping process makes use the estimated position, and that the position is estimated with respect to the built map, this problem is hard and can be seen as a "chicken and egg" problem.
 
-SLAM relies on the idea that it is necessary to make use of external information combined with internal states estimation to perform well. It involves making multiple observations on the environment and fusing all of them, to build a consistent global map and correct various estimation drifts and errors.
+SLAM relies on the idea that it is necessary to make use of external information combined with internal states estimation to perform well. It involves making multiple observations on the environment and fusing all of them, to build a consistent global map and correct various estimation drifts and errors. Here are some examples of the lane following demo by duckiebot with/without using external information from the map: 
 
-TODO: videos of duckiebot lane following with/without external information
+<figure class="Lane follwing demo with/without external information from the map">  
+    <figcaption>1. without external information.</figcaption>
+    <figure>
+        <figcaption>Example of lane following demo without external info.</figcaption>
+        <img style='width:14em' src="videos/without_ext_info.MOV"/>
+    </figure>
+    <figure>  
+        <figcaption>2. lane following demo with external information</figcaption>
+        <iframe style='width:14em; height:auto' src="videos/lane_following_demo_with_ext_info.MOV" frameborder="0" allowfullscreen="true"></iframe>
+    </figure>
+</figure> 
+
+
 ## SLAM today
 There are several variants of SLAM. We are going to focus on the most popular one: Visual SLAM. Visual SLAM is the process of performing SLAM using vision sensors as primary inputs.
 
