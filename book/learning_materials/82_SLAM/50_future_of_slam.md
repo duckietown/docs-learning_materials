@@ -238,7 +238,7 @@ Here are examples of cases where having some kind of understanding of what is ar
     </figure>
     <figure>
         <figcaption> A door you know will open.</figcaption>
-        <img style='width:20em; height:auto' src="figures/auto_door.png"/>
+        <img style='width:20em; height:auto' src="figures/auto_doors.png"/>
     </figure>
     <figure>
         <figcaption> Someone you should listen to.</figcaption>
