@@ -28,7 +28,11 @@ Seeing that the mapping process makes use the estimated position, and that the p
 SLAM relies on the idea that it is necessary to make use of external information combined with internal states estimation to perform well. It involves making multiple observations on the environment and fusing all of them, to build a consistent global map and correct various estimation drifts and errors. Here are some examples of the lane following demo by duckiebot with/without using external information from the map:
 
 <figure class="Lane following demo with and without external information from the map">  
+<<<<<<< Updated upstream
     <figcaption>Why external information is important.</figcaption>
+=======
+    <figcaption>1.Why external information is important.</figcaption>
+>>>>>>> Stashed changes
     <figure>
         <figcaption>Example of lane following demo without external info.</figcaption>
         <iframe style='width:20em; height:auto' src="https://www.youtube.com/embed/n2ZHlNfFjUo" frameborder="0" allowfullscreen="true"></iframe>
@@ -106,43 +110,50 @@ There are a variety of vision sensors around, which output different types of in
     </figure>
 </figure>
 
-These sensors are the most popular in current SLAM systems, even though other types (event-based cameras) for example exist and might be useful in future SLAM systems.
+These sensors are the most popular in current SLAM systems, even though other types exist and might be useful in future SLAM systems.
 
 
 ### Examples of successes stories of SLAM
 
-*Kuka Navigation solution* this is an autonomous transportation solution mostly used in industries proposed by Amazon Co. This is one of the success stories up to today, mapping a 2D indoor environment with sufficient accuracy (less than 10cm) and sufficient robustness (say, low failure rate), can be considered largely solved.
+*Kuka Navigation solution* is an autonomous transportation solution mostly used in warehouses (for example in Amazon's). This is one of the success stories up to today in which mapping a fixed and size limited 2D indoor environment with sufficient accuracy (less than 10cm) and sufficient robustness (say, low failure rate) while interacting with several humans and robots in a very controlled environment works well.
 <figure class="flow-subfigures">  
     <figcaption>Kuka Navigation solution</figcaption>
-    <figure>
-        <figcaption>Kuka Navigation solution</figcaption>
-        <iframe style='width: 20em; height:auto' src="https://www.youtube.com/embed/kN9a7W_hnSQ" frameborder="0" allowfullscreen="true"></iframe>
-    </figure>
+      <iframe style='width: 20em; height:auto' src="https://www.youtube.com/embed/kN9a7W_hnSQ" frameborder="0" allowfullscreen="true"></iframe>
 </figure>
 
+<<<<<<< Updated upstream
 *Mars Exploration Rovers* aims at exploring the Martian surface and geology of planet Mars,  and similarly vision-base SLAM with slowly moving robots and visual inertial odometry can be considered mature research fields. In this example and also the previous one, the evironment is predictable, we don't have highly dynamic objects.
 <figure class="flow-subfigures">  
     <figcaption>Mars Exploration Rovers</figcaption>
     <figure>
         <figcaption>Mars Exploration Rovers</figcaption>
+=======
+*Mars Exploration Rovers* aims at exploring the Martian surface and geology of planet Mars,  and similarly vision-base SLAM with slowly moving robots and visual inertial odometry can be considered mature research fields. In this example and also the previous one, the evironment is predictable, we don't have highly dynamic objects. 
+<figure class="flow-subfigures"> 
+    <figcaption>Mars Exploration Rovers</figcaption> 
+>>>>>>> Stashed changes
         <iframe style='width: 20em; height:auto' src="https://www.youtube.com/embed/APGswfxKqEw" frameborder="0" allowfullscreen="true"></iframe>
-    </figure>
 </figure>
 
+<<<<<<< Updated upstream
 
 *Rumba* is an autonomous robotic vaccum cleaners sold by iRobot. Roomba features a set of sensors and can navigate the floor area of the home and clean it. You can see how well it performs in the following video:
 
+=======
+*Roomba* is an autonomous robotic vacuum cleaner sold by iRobot. Roomba can navigate the floor area of an initially unknown home (with limited size) and clean it. In this case the environment is mostly static. You can see how well it performs in the following video:
+>>>>>>> Stashed changes
 
 <figure class="flow-subfigures">  
-    <figcaption>Roombe robotic vaccum cleaner</figcaption>
-    <figure>
-        <figcaption>Roomba robotic vaccum cleaner</figcaption>
+    <figcaption>Roombe robotic vaccum cleaner</figcaption
         <iframe style='width: 20em; height:auto' src="https://www.youtube.com/embed/hZFlrYMrKCE" frameborder="0" allowfullscreen="true"></iframe>
-    </figure>
 </figure>
 
 
+<<<<<<< Updated upstream
 *Autonomous Cars* self driving cars is not an absolute success story; however, we have seen many significant progress on autonomous vehicles in recent years. There are 6 different levels of driving automation:
+=======
+*Autonomous Cars* self driving cars ARE not an absolute success story; however, we have seen many significant progress on autonomous vehicles in recent years. There are 6 different levels of driving automation: 
+>>>>>>> Stashed changes
 	*Level 0* in this level there is no sustained vehicle control, only an automated system issue warnings (we've already have this feature in our cars)
 	*Level 1 ("hands on")* the automated system and the driver share the control of the vehicle, expamples are Cruise Control, Parking assistance and lane keeping assistance (We also achieved these feature in the recent years)
 	*Level 2 ("hands off")* the automated system takes full control of the vehicle but the driver must monitor the driving and be ready to intervene immediately at any time (this is simlar to a full cruise control so we have this as well)
@@ -156,10 +167,7 @@ The last 3 levels are also achieved at some degrees but still lots of works to d
 <br/>
 <figure class="flow-subfigures">  
     <figcaption>Autonomous Cars</figcaption>
-    <figure>
-        <figcaption>Autonomous Cars</figcaption>
         <iframe style='width: 20em; height:auto' src="https://www.youtube.com/embed/xsQvq4WlUYU" frameborder="0" allowfullscreen="true"></iframe>
-    </figure>
 </figure>
 
 
@@ -176,8 +184,14 @@ Usually, SLAM systems are designed to be used in unknown environments, meaning t
 We want SLAM systems to be robust. Being that most environments they are likely to operate in are dynamic, as illustrated in the figures below :
 
 <figure>
-	<figcaption>The same scene in summer vs winter</figcaption>
-	<img style='width:20em; height:auto' src="figures/winter_summer.png"/>
+	<figure>
+        <figcaption>The same scene in summer vs winter</figcaption>
+	   <img style='width:20em; height:auto' src="figures/winter_summer.png"/>
+    </figure>
+    <figure>
+            <figcaption>A scene with many moving entities.</figcaption>
+            <img style='width:20em; height:15em' src="figures/dynamic_scene.png"/>
+    </figure>
 </figure>
 
 
@@ -191,13 +205,16 @@ In the video below, you can see the image from a camera, as well as two estimate
 one error affects badly the whole estimate, which quickly becomes completely wrong.
 
 
-
 <figure class="flow-subfigures">  
     <figcaption>A video of optimization failing</figcaption>
+<<<<<<< Updated upstream
     <figure>
         <figcaption>A video of optimization failing</figcaption>
         <iframe style='width: 20em; height:auto' src="https://www.youtube.com/embed/kkgB8CTKUII" frameborder="0" allowfullscreen="true"></iframe>
     </figure>
+=======
+        <iframe style='width: 20em; height:auto' src="https://www.youtube.com/embed/kkgB8CTKUII" frameborder="0" allowfullscreen="true"></iframe>
+>>>>>>> Stashed changes
 </figure>
 
 
@@ -211,10 +228,7 @@ Imagine you have a truck driving to deliver the weekly bread crumb supplies to t
 
 <figure class="flow-subfigures">  
     <figcaption> The memory and computation problem example</figcaption>
-    <figure>
-        <figcaption>Memory and computation problem</figcaption>
         <img style='width:20em; height:auto' src="figures/bread_example.png"/>
-    </figure>
 </figure>
 
 
@@ -229,10 +243,7 @@ You can see here how a modern SLAM system represents the environment:
 
 <figure class="flow-subfigures">  
     <figcaption>ORB SLAM</figcaption>
-    <figure>
-        <figcaption>ORB SLAM</figcaption>
-        <iframe style='width: 20em; height:auto' src="https://www.youtube.com/embed/ufvPS5wJAx0" frameborder="0" allowfullscreen="true"></iframe>
-    </figure>
+    <iframe style='width: 20em; height:auto' src="https://www.youtube.com/embed/ufvPS5wJAx0" frameborder="0" allowfullscreen="true"></iframe>
 </figure>
 
 Note how the SLAM map differs from what a human would see in an image. The SLAM system sees lines and points which appear salient visually, while the human would recognize objects and how they are arranged.
@@ -242,11 +253,22 @@ Not only could understanding help make the representation more compact (leading 
 Here are examples of cases where having some kind of understanding of what is around can help SLAM:
 
 <figure class="flow-subfigures">  
-    <figcaption> An example to show prior knowledge would help SLAM</figcaption>
-    <figure>
-        <figcaption> An example to show prior knowledge would help SLAM</figcaption>
-        <img style='width:20em; height:auto' src="figures/semantic.png"/>
-    </figure>
+    <figcaption> Examples of cases where prior knowledge would help SLAM</figcaption>
+        <figure>
+            <figcaption> A scene looking visually different.</figcaption>
+            <img style='width:20em; height:auto' src="figures/winter_summer.png"/>
+        </figure>
+        <figure>
+            <figcaption> A bridge you maybe shouldn't cross.</figcaption>
+            <img style='width:20em; height:auto' src="figures/bridge.png"/>
+        </figure>
+        <figure>
+            <figcaption> A door you know will open.</figcaption>
+            <img style='width:20em; height:auto' src="figures/auto_doors.png"/>
+        </figure>
+        <figure>
+            <figcaption> Someone you should listen to.</figcaption>
+            <img style='width:20em; height:auto' src="figures/policeman.png"/>
 </figure>
 
 In the above figures, if the robot's already had some prior knowldege indicating the bridge is not safe enough, decided to not pass the bridge or in the left figure if you could recognize the material of the objects such as the glass wall, would avoid the robot to collide with the wall.
@@ -262,10 +284,7 @@ Here is a well-known AI meme, in the context of Spatial AI.
 
 <figure class="flow-subfigures">  
     <figcaption> An example to show how Spatial AI evolved</figcaption>
-    <figure>
-        <figcaption>An example to show how Spatial AI evolved</figcaption>
-        <img style='width:20em; height:auto' src="figures/wallcrack.png"/>
-    </figure>
+    <img style='width:20em; height:auto' src="figures/wallcrack.png"/>
 </figure>
 
 Just as AI concerns with building good representations, Spatial AI aims to have the right spatial representations (representation os the space in which a robot operates.) Spatial AI supercodes SLAM in te sense that, it's more than just localiztion and mapping.
@@ -328,10 +347,7 @@ Robotics always had the intuition and argued that semantics would play a crucial
 Following video shows how semantic information can help SLAM to perform better:
 <figure class="flow-subfigures">  
     <figcaption>Semantic helps SLAM</figcaption>
-    <figure>
-        <figcaption>Semantic helps SLAM</figcaption>
         <iframe style='width: 20em; height:auto' src="https://www.youtube.com/embed/ebIrBn_nc-k" frameborder="0" allowfullscreen="true"></iframe>
-    </figure>
 </figure>
 
 #### SLAM helps semantics
@@ -339,11 +355,8 @@ Following video shows how semantic information can help SLAM to perform better:
 Computer vision researchers, on the other hand, believed that SLAM could help in a better understanding of the _semantics_ of a scene. In this video, a couple of researchers from MIT demonstrate that object detection, a popular computer vision task, benefits from using information provided by a SLAM system.
 
 <figure class="flow-subfigures">  
-    <figcaption>SLAM helps semantic</figcaption>
-    <figure>
-        <figcaption>SLAM helps Semantic </figcaption>
+    <figcaption>SLAM helps Semantic </figcaption>
         <iframe style='width: 20em; height:auto' src="https://www.youtube.com/embed/m6sStUk3UVk" frameborder="0" allowfullscreen="true"></iframe>
-    </figure>
 </figure>
 
 #### SLAM and semantics help each other
@@ -352,30 +365,21 @@ And there are a few more people, who argue that SLAM and semantics help each oth
 
 <figure class="flow-subfigures">  
     <figcaption>SLAM and Semantic helps each other!</figcaption>
-    <figure>
-        <figcaption>SLAM and Semantic helps each other!</figcaption>
         <iframe style='width: 20em; height:auto' src="https://www.youtube.com/embed/0zHMMQPswgY" frameborder="0" allowfullscreen="true"></iframe>
-    </figure>
 </figure>
 
 After this, have all the other work. "Higher-level representations that are object-oriented, will play a key role shaping the future of SLAM. Having explicit object representations enable robots to reason about objects, their mass, their affordances, and thus aid higher level tasks.
 
 <figure class="flow-subfigures">  
-    <figcaption>Object-level map</figcaption>
-    <figure>
-        <figcaption>Object level map</figcaption>
+    <figcaption>Object level map</figcaption>
         <iframe style='width: 20em; height:auto' src="https://www.youtube.com/embed/tmrAh1CqCRo" frameborder="0" allowfullscreen="true"></iframe>
-    </figure>
 </figure>
 
 Below is a video of Fusion++ work, an online object-level SLAM system that builds a persistent and accurate 3D graph map of arbitrary reconstructed objects. The work demonstrates an object-oriented online SLAM system with a focus on indoor scene understanding using RGB-D Data.
 
 <figure class="flow-subfigures">  
     <figcaption>Current art in object-SLAM</figcaption>
-    <figure>
-        <figcaption>Current art in object-SLAM</figcaption>
         <iframe style='width: 20em; height:auto' src="https://www.youtube.com/embed/2luKNC03x4k" frameborder="0" allowfullscreen="true"></iframe>
-    </figure>
 </figure>
 
 ## Our Project: Line based SLAM in Duckietown
@@ -383,11 +387,8 @@ Below is a video of Fusion++ work, an online object-level SLAM system that build
 The project is a graph based SLAM with semantic lines. Lines are recognized as part of the road, we have 3 different type of lines, *yellow lines* in the center of the road, *white lines* located on the sides of the road and *red lines*  which is a stop line. Then we make use them as a prior knowledge on duckietown.
 
 <figure class="flow-subfigures">  
-    <figcaption> Different types of lines in Duckietown</figcaption>
-    <figure>
-        <figcaption>Different types of lines in Duckietown</figcaption>
+    <figcaption>Different types of lines in Duckietown</figcaption>
         <img style='width:20em; height:auto' src="figures/lines.png"/>
-    </figure>
 </figure>
 
 We use a line detection module using our line segment detector and compute a descriptor for each line then match those descriptors across images. use that to compute camera motion and also map those lines in 3D space. For that, we estimate the homography matrix to constuct lanes and computing cmera motion by measuring rotation and translation components. we're assuming the place recognition problem is already solved and we're using that to trigger global consistent optimization and integrate prior knowledge.
