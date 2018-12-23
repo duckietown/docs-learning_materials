@@ -277,6 +277,8 @@ We resume the main differences in the following table:
 <table style="width:100%" border="1|0">
   <tr>
     <th>   </th>
+    <th> Feature</th>
+    <th>   </th>
     <th>Geometric SLAM</th>
     <th>Spatial AI</th>
   </tr>
@@ -285,28 +287,33 @@ We resume the main differences in the following table:
     <td> </td>
     <td> </td>
     <td> </td>
+    <td> </td>
   </tr>
  <tr>
     <td> </td>
     <td><i>Map</i></td>
-    <td>Bunch of geometric entities(points,lines,planes, etc)</td>
-    <td>Semantic categories, objects, agents</td>
+    <td> </td>
+    <td> Bunch of geometric entities(points,lines,planes, etc)</td>
+    <td> Semantic categories, objects, agents</td>
   </tr>
   <tr>
     <td> </td>
     <td><i>Orientation</i></td>
+    <td> </td>
     <td>Task-agnostic</td>
     <td>Task-driven</td>
   </tr>
   <tr>
     <td> </td>
     <td><i>Interpretability</i></td>
+    <td> </td>
     <td>Not very interpretable</td>
     <td>Interpretability is key </td>
   </tr>
   <tr>
-     <td><b>co-Design</b></td>
-     <td><i>Infrastructure</i></td>
+    <td><b>co-Design</b></td>
+    <td><i>Infrastructure</i></td>
+    <td> </td>
     <td>Sensors, Algorithms</td>
     <td>Sensors, Algorithms, Processors</td>
  </tr>
