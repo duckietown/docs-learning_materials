@@ -126,7 +126,7 @@ These sensors are the most popular in current SLAM systems, even though other ty
 *Roomba* is an autonomous robotic vacuum cleaner sold by iRobot. Roomba can navigate the floor area of an initially unknown home (with limited size) and clean it. In this case the environment is mostly static. You can see how well it performs in the following video:
 
 <figure class="flow-subfigures">  
-    <figcaption>Roombe robotic vaccum cleaner</figcaption
+    <figcaption>Roombe robotic vaccum cleaner</figcaption>
         <iframe style='width: 20em; height:auto' src="https://www.youtube.com/embed/hZFlrYMrKCE" frameborder="0" allowfullscreen="true"></iframe>
 </figure>
 
@@ -147,8 +147,6 @@ The last 3 levels are also achieved at some degrees but still lots of works to d
     <figcaption>Autonomous Cars</figcaption>
         <iframe style='width: 20em; height:auto' src="https://www.youtube.com/embed/xsQvq4WlUYU" frameborder="0" allowfullscreen="true"></iframe>
 </figure>
-
-
 
 ## Issues with current solutions
 We have seen in the previous part that in several cases, we had SLAM systems performing very well and achieving tasks efficiently.
@@ -362,4 +360,4 @@ The project is a graph based SLAM with semantic lines. Lines are recognized as p
         <img style='width:20em; height:auto' src="figures/lines.png"/>
 </figure>
 
-We use a line detection module using our line segment detector and compute a descriptor for each line then match those descriptors across images. use that to compute camera motion and also map those lines in 3D space. For that, we estimate the homography matrix to constuct lanes and computing cmera motion by measuring rotation and translation components. we're assuming the place recognition problem is already solved and we're using that to trigger global consistent optimization and integrate prior knowledge.
+We use a line detection module using our line segment detector and compute a descriptor for each line then match those descriptors across images. use that to compute camera motion and also map those lines in 3D space. For that, we estimate the homography matrix to constuct lanes and computing camera motion by measuring rotation and translation components. we're assuming the place recognition problem is already solved and we're using that to trigger global consistent optimization and integrate prior knowledge.
