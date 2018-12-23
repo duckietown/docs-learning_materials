@@ -1,7 +1,6 @@
-# From SLAM to Spatial AI {# from_SLAM_to_Spatial_AI status=draft}
+# From SLAM to Spatial AI {#From_SLAM_to_SpatialAI status=draft}
 
 Assigned: SLAM team
-
 
 ## simultaneously Localization and Mapping (SLAM)
 SLAM is a process which appears in a context where you have a robot in an unknown environment.
@@ -11,14 +10,14 @@ To do so first requires representing the environment around the robot through a 
 
 <figure class="flow-subfigures">  
     <figcaption>An example of mapping and localization</figcaption>
-    <figure>
-        <figcaption>Example of Mapping.</figcaption>
-        <img style='width:20em; height:15em' src="figures/mapping.png"/>
-    </figure>
-    <figure>
-        <figcaption>Example of Localization.</figcaption>
-        <img style='width:20em; height:15em' src="figures/localization.png"/>
-    </figure>
+        <figure>
+            <figcaption>Example of Mapping.</figcaption>
+            <img style='width:20em; height:15em' src="figures/mapping.png"/>
+        </figure>
+        <figure>
+            <figcaption>Example of Localization.</figcaption>
+            <img style='width:20em; height:15em' src="figures/localization.png"/>
+        </figure>
   </figure>
 
 These two processes depend on each other, and have to be performed simultaneously and continuously through the duration of the task, leading to _*S*imultaneous *L*ocalization *A*nd *M*apping_.
@@ -28,13 +27,13 @@ Seeing that the mapping process makes use the estimated position, and that the p
 SLAM relies on the idea that it is necessary to make use of external information combined with internal states estimation to perform well. It involves making multiple observations on the environment and fusing all of them, to build a consistent global map and correct various estimation drifts and errors. Here are some examples of the lane following demo by duckiebot with/without using external information from the map: 
 
 <figure class="Lane following demo with and without external information from the map">  
-    <figcaption>1.Why external information is important.</figcaption>
+    <figcaption>Why external information is important.</figcaption>
     <figure>
-        <figcaption>Example of lane following demo without external info.</figcaption>
+        <figcaption>1. Lane following demo without external info.</figcaption>
         <iframe style='width:20em; height:auto' src="https://www.youtube.com/embed/n2ZHlNfFjUo" frameborder="0" allowfullscreen="true"></iframe>
     </figure>
     <figure>  
-        <figcaption>2. lane following demo with external info.</figcaption>
+        <figcaption>2. Lane following demo with external info.</figcaption>
         <iframe style='width:20em; height:auto' src="https://www.youtube.com/embed/guU9QsTT2vM" frameborder="0" allowfullscreen="true"></iframe>
     </figure>
 </figure> 
@@ -160,9 +159,10 @@ Usually, SLAM systems are designed to be used in unknown environments, meaning t
 We want SLAM systems to be robust. Being that most environments they are likely to operate in are dynamic, as illustrated in the figures below :
 
 <figure>
+    <figcaption>Examples of cases that threaten robustness </figcaption>
 	<figure>
-        <figcaption>The same scene in summer vs winter</figcaption>
-	   <img style='width:20em; height:auto' src="figures/winter_summer.png"/>
+        <figcaption>The same scene in summer vs winter. </figcaption>
+	    <img style='width:20em; height:auto' src="figures/winter_summer.png"/>
     </figure>
     <figure>
             <figcaption>A scene with many moving entities.</figcaption>
@@ -238,10 +238,8 @@ Here are examples of cases where having some kind of understanding of what is ar
         <figure>
             <figcaption> Someone you should listen to.</figcaption>
             <img style='width:20em; height:auto' src="figures/policeman.png"/>
+        </figure>
 </figure>
-
-In the above figures, if the robot's already had some prior knowldege indicating the bridge is not safe enough, decided to not pass the bridge or in the left figure if you could recognize the material of the objects such as the glass wall, would avoid the robot to collide with the wall.
-
 
 ## Spatial AI, not just SLAM
 As we have seen, current SLAM solutions have some issues, and SLAM still needs some work on. A recent paper FutureMapping by Andrew Davison, 2018 introduced a new term: "*Spatial AI*". This paper describes considerations on where SLAM should be heading, and what we should aim at having.
@@ -264,15 +262,15 @@ We resume the main differences in the following table:
 
 <table style="width:100%" border="1|0">
   <tr>
-    <th>   </th>
-    <th> Feature</th>
-    <th>   </th>
+    <th></th>
+    <th></th>
+    <th></th>
     <th>Geometric SLAM</th>
     <th>Spatial AI</th>
   </tr>
   <tr>
     <td><b>Representation</b></td> 
-    <td> </td>
+    <td>Feature</td>
     <td> </td>
     <td> </td>
     <td> </td>
@@ -281,7 +279,7 @@ We resume the main differences in the following table:
     <td> </td>
     <td><i>Map</i></td>
     <td> </td>
-    <td> Bunch of geometric entities(points,lines,planes, etc)</td>
+    <td> Bunch of geometric entities(points, lines, planes, etc)</td>
     <td> Semantic categories, objects, agents</td>
   </tr>
   <tr>
@@ -309,7 +307,7 @@ We resume the main differences in the following table:
 
 ### Recent works towards Spatial AI
 
-#### Semantics help SLAM
+#### <b>Semantics help SLAM</b>
 
 Robotics always had the intuition and argued that semantics would play a crucial role in enhancing SLAM. The following video, from a very recent paper from Oxford, shows how semantics can help SLAM. This paper concerns with the task of monocular visual odometry estimation, i.e., estimating the 6-DoF (6 degress of freedom) motion of a camera, by using only monocular images as input. Traditional feature-based visual odometry/SLAM approaches rely on static scene features for reliable operation, and they fail miserably in the presence of moving objects. This paper leverages data from driving over a year, to train a deep neural network that classifies each image point as being stable or unstable, indicating how well it would contribute to a visual odometry estimate. The paper shows that using such a scheme, they obtain unprecedented performance improvements compared to traditional visual odometry approaches.  
 
@@ -319,7 +317,7 @@ Following video shows how semantic information can help SLAM to perform better:
         <iframe style='width: 20em; height:auto' src="https://www.youtube.com/embed/ebIrBn_nc-k" frameborder="0" allowfullscreen="true"></iframe>
 </figure>
 
-#### SLAM helps semantics
+#### <b>SLAM helps semantics</b>
 
 Computer vision researchers, on the other hand, believed that SLAM could help in a better understanding of the _semantics_ of a scene. In this video, a couple of researchers from MIT demonstrate that object detection, a popular computer vision task, benefits from using information provided by a SLAM system.
 
@@ -328,7 +326,7 @@ Computer vision researchers, on the other hand, believed that SLAM could help in
         <iframe style='width: 20em; height:auto' src="https://www.youtube.com/embed/m6sStUk3UVk" frameborder="0" allowfullscreen="true"></iframe>
 </figure>
 
-#### SLAM and semantics help each other
+#### <b>SLAM and semantics help each other</b>
 
 And there are a few more people, who argue that SLAM and semantics help each other. Here's a video of some recent work that demonstrates the hypothesis.
 
@@ -337,6 +335,7 @@ And there are a few more people, who argue that SLAM and semantics help each oth
         <iframe style='width: 20em; height:auto' src="https://www.youtube.com/embed/0zHMMQPswgY" frameborder="0" allowfullscreen="true"></iframe>
 </figure>
 
+#### <b>Object-oriented representation in SLAM </b>
 After this, have all the other work. "Higher-level representations that are object-oriented, will play a key role shaping the future of SLAM. Having explicit object representations enable robots to reason about objects, their mass, their affordances, and thus aid higher level tasks. 
 
 <figure class="flow-subfigures">  
@@ -360,4 +359,4 @@ The project is a graph based SLAM with semantic lines. Lines are recognized as p
         <img style='width:20em; height:auto' src="figures/lines.png"/>
 </figure>
 
-We use a line detection module using our line segment detector and compute a descriptor for each line then match those descriptors across images. use that to compute camera motion and also map those lines in 3D space. For that, we estimate the homography matrix to constuct lanes and computing camera motion by measuring rotation and translation components. we're assuming the place recognition problem is already solved and we're using that to trigger global consistent optimization and integrate prior knowledge.
+We use a line detection module using our line segment detector and compute a descriptor for each line then match those descriptors across images. use that to compute camera motion and also map those lines in 3D space. For that, we estimate the homography matrix to construct lanes and computing camera motion by measuring rotation and translation components. we're assuming the place recognition problem is already solved and we're using that to trigger global consistent optimization and integrate prior knowledge.
