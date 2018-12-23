@@ -5,7 +5,7 @@ Assigned: SLAM team
 
 ## simultaneously Localization and Mapping (SLAM)
 SLAM is a process which appears in a context where you have a robot in an unknown environment.
-In many cases, a meaningful task would need for the robot to navigate and interact with the environment. Such actions often make use of a type of map of the environment and at the same time use this map to compute it's own location.
+In many cases, a meaningful task would need for the robot to navigate and interact with the environment. Such actions often make use of a type of map of the environment and at the same time use this map to compute it's own location. 
 
 To do so first requires representing the environment around the robot through a _mapping_ process. As the robot moves around, it will also need to perform a process called _localization_.
 
@@ -25,14 +25,10 @@ These two processes depend on each other, and have to be performed simultaneousl
 
 Seeing that the mapping process makes use the estimated position, and that the position is estimated with respect to the built map, this problem is hard and can be seen as a "chicken and egg" problem.
 
-SLAM relies on the idea that it is necessary to make use of external information combined with internal states estimation to perform well. It involves making multiple observations on the environment and fusing all of them, to build a consistent global map and correct various estimation drifts and errors. Here are some examples of the lane following demo by duckiebot with/without using external information from the map:
+SLAM relies on the idea that it is necessary to make use of external information combined with internal states estimation to perform well. It involves making multiple observations on the environment and fusing all of them, to build a consistent global map and correct various estimation drifts and errors. Here are some examples of the lane following demo by duckiebot with/without using external information from the map: 
 
 <figure class="Lane following demo with and without external information from the map">  
-<<<<<<< Updated upstream
-    <figcaption>Why external information is important.</figcaption>
-=======
     <figcaption>1.Why external information is important.</figcaption>
->>>>>>> Stashed changes
     <figure>
         <figcaption>Example of lane following demo without external info.</figcaption>
         <iframe style='width:20em; height:auto' src="https://www.youtube.com/embed/n2ZHlNfFjUo" frameborder="0" allowfullscreen="true"></iframe>
@@ -41,7 +37,7 @@ SLAM relies on the idea that it is necessary to make use of external information
         <figcaption>2. lane following demo with external info.</figcaption>
         <iframe style='width:20em; height:auto' src="https://www.youtube.com/embed/guU9QsTT2vM" frameborder="0" allowfullscreen="true"></iframe>
     </figure>
-</figure>
+</figure> 
 
 
 ## SLAM today
@@ -121,27 +117,13 @@ These sensors are the most popular in current SLAM systems, even though other ty
       <iframe style='width: 20em; height:auto' src="https://www.youtube.com/embed/kN9a7W_hnSQ" frameborder="0" allowfullscreen="true"></iframe>
 </figure>
 
-<<<<<<< Updated upstream
-*Mars Exploration Rovers* aims at exploring the Martian surface and geology of planet Mars,  and similarly vision-base SLAM with slowly moving robots and visual inertial odometry can be considered mature research fields. In this example and also the previous one, the evironment is predictable, we don't have highly dynamic objects.
-<figure class="flow-subfigures">  
-    <figcaption>Mars Exploration Rovers</figcaption>
-    <figure>
-        <figcaption>Mars Exploration Rovers</figcaption>
-=======
 *Mars Exploration Rovers* aims at exploring the Martian surface and geology of planet Mars,  and similarly vision-base SLAM with slowly moving robots and visual inertial odometry can be considered mature research fields. In this example and also the previous one, the evironment is predictable, we don't have highly dynamic objects. 
 <figure class="flow-subfigures"> 
     <figcaption>Mars Exploration Rovers</figcaption> 
->>>>>>> Stashed changes
         <iframe style='width: 20em; height:auto' src="https://www.youtube.com/embed/APGswfxKqEw" frameborder="0" allowfullscreen="true"></iframe>
 </figure>
 
-<<<<<<< Updated upstream
-
-*Rumba* is an autonomous robotic vaccum cleaners sold by iRobot. Roomba features a set of sensors and can navigate the floor area of the home and clean it. You can see how well it performs in the following video:
-
-=======
 *Roomba* is an autonomous robotic vacuum cleaner sold by iRobot. Roomba can navigate the floor area of an initially unknown home (with limited size) and clean it. In this case the environment is mostly static. You can see how well it performs in the following video:
->>>>>>> Stashed changes
 
 <figure class="flow-subfigures">  
     <figcaption>Roombe robotic vaccum cleaner</figcaption
@@ -149,11 +131,7 @@ These sensors are the most popular in current SLAM systems, even though other ty
 </figure>
 
 
-<<<<<<< Updated upstream
-*Autonomous Cars* self driving cars is not an absolute success story; however, we have seen many significant progress on autonomous vehicles in recent years. There are 6 different levels of driving automation:
-=======
 *Autonomous Cars* self driving cars ARE not an absolute success story; however, we have seen many significant progress on autonomous vehicles in recent years. There are 6 different levels of driving automation: 
->>>>>>> Stashed changes
 	*Level 0* in this level there is no sustained vehicle control, only an automated system issue warnings (we've already have this feature in our cars)
 	*Level 1 ("hands on")* the automated system and the driver share the control of the vehicle, expamples are Cruise Control, Parking assistance and lane keeping assistance (We also achieved these feature in the recent years)
 	*Level 2 ("hands off")* the automated system takes full control of the vehicle but the driver must monitor the driving and be ready to intervene immediately at any time (this is simlar to a full cruise control so we have this as well)
@@ -201,20 +179,13 @@ Currently, they mostly rely on geometric and visual features, which would comple
 Not only would the perception module fail with dynamic environments, but also the back end.
 In fact, in the case that an error in recognition is made (one place recognized as being the same when it is actually a different one), the optimization produces a very considerable error in the trajectory estimate.
 
-In the video below, you can see the image from a camera, as well as two estimated trajectories. Both trajectories are estimated with a state of the art SLAM optimizer (g2o), used in many popular solutions. In the top trajectory, no data association is made, and the estimation is very good. However in the bottom trajectory, three random association errors are added over time. We can see that even
+In the video below, you can see the image from a camera, as well as two estimated trajectories. Both trajectories are estimated with a state of the art SLAM optimizer (g2o), used in many popular solutions. In the top trajectory, no data association is made, and the estimation is very good. However in the bottom trajectory, three random association errors are added over time. We can see that even 
 one error affects badly the whole estimate, which quickly becomes completely wrong.
 
 
 <figure class="flow-subfigures">  
     <figcaption>A video of optimization failing</figcaption>
-<<<<<<< Updated upstream
-    <figure>
-        <figcaption>A video of optimization failing</figcaption>
         <iframe style='width: 20em; height:auto' src="https://www.youtube.com/embed/kkgB8CTKUII" frameborder="0" allowfullscreen="true"></iframe>
-    </figure>
-=======
-        <iframe style='width: 20em; height:auto' src="https://www.youtube.com/embed/kkgB8CTKUII" frameborder="0" allowfullscreen="true"></iframe>
->>>>>>> Stashed changes
 </figure>
 
 
@@ -280,7 +251,7 @@ As we have seen, current SLAM solutions have some issues, and SLAM still needs s
 ### What is Spatial AI
 Even though "Spatial AI" is a new term, most robotics people often use it interchangeably with "Semantic SLAM". we, however, hope to make a clear distinction between current SLAM techniques, and the grand goal of Spatial AI.
 
-Here is a well-known AI meme, in the context of Spatial AI.
+Here is a well-known AI meme, in the context of Spatial AI. 
 
 <figure class="flow-subfigures">  
     <figcaption> An example to show how Spatial AI evolved</figcaption>
@@ -302,7 +273,7 @@ We resume the main differences in the following table:
     <th>Spatial AI</th>
   </tr>
   <tr>
-    <td><b>Representation</b></td>
+    <td><b>Representation</b></td> 
     <td> </td>
     <td> </td>
     <td> </td>
@@ -336,7 +307,7 @@ We resume the main differences in the following table:
     <td>Sensors, Algorithms</td>
     <td>Sensors, Algorithms, Processors</td>
  </tr>
-</table>
+</table> 
 
 ### Recent works towards Spatial AI
 
@@ -344,7 +315,7 @@ We resume the main differences in the following table:
 
 Robotics always had the intuition and argued that semantics would play a crucial role in enhancing SLAM. The following video, from a very recent paper from Oxford, shows how semantics can help SLAM. This paper concerns with the task of monocular visual odometry estimation, i.e., estimating the 6-DoF (6 degress of freedom) motion of a camera, by using only monocular images as input. Traditional feature-based visual odometry/SLAM approaches rely on static scene features for reliable operation, and they fail miserably in the presence of moving objects. This paper leverages data from driving over a year, to train a deep neural network that classifies each image point as being stable or unstable, indicating how well it would contribute to a visual odometry estimate. The paper shows that using such a scheme, they obtain unprecedented performance improvements compared to traditional visual odometry approaches.  
 
-Following video shows how semantic information can help SLAM to perform better:
+Following video shows how semantic information can help SLAM to perform better: 
 <figure class="flow-subfigures">  
     <figcaption>Semantic helps SLAM</figcaption>
         <iframe style='width: 20em; height:auto' src="https://www.youtube.com/embed/ebIrBn_nc-k" frameborder="0" allowfullscreen="true"></iframe>
@@ -368,7 +339,7 @@ And there are a few more people, who argue that SLAM and semantics help each oth
         <iframe style='width: 20em; height:auto' src="https://www.youtube.com/embed/0zHMMQPswgY" frameborder="0" allowfullscreen="true"></iframe>
 </figure>
 
-After this, have all the other work. "Higher-level representations that are object-oriented, will play a key role shaping the future of SLAM. Having explicit object representations enable robots to reason about objects, their mass, their affordances, and thus aid higher level tasks.
+After this, have all the other work. "Higher-level representations that are object-oriented, will play a key role shaping the future of SLAM. Having explicit object representations enable robots to reason about objects, their mass, their affordances, and thus aid higher level tasks. 
 
 <figure class="flow-subfigures">  
     <figcaption>Object level map</figcaption>
@@ -384,7 +355,7 @@ Below is a video of Fusion++ work, an online object-level SLAM system that build
 
 ## Our Project: Line based SLAM in Duckietown
 
-The project is a graph based SLAM with semantic lines. Lines are recognized as part of the road, we have 3 different type of lines, *yellow lines* in the center of the road, *white lines* located on the sides of the road and *red lines*  which is a stop line. Then we make use them as a prior knowledge on duckietown.
+The project is a graph based SLAM with semantic lines. Lines are recognized as part of the road, we have 3 different type of lines, *yellow lines* in the center of the road, *white lines* located on the sides of the road and *red lines*  which is a stop line. Then we make use them as a prior knowledge on duckietown. 
 
 <figure class="flow-subfigures">  
     <figcaption>Different types of lines in Duckietown</figcaption>
