@@ -15,7 +15,7 @@ Object detection helps autonomous vehicles detect different objects. The differe
 
 Generally, object detection can be solved by features of machine learning approaches such as SIFT, HOG, Haar-like features etc. However, deep learning approaches perform much better lately and will be illustrated here. 
 
-Region-CNN (R-CNN) is one of the state-of-the-art CNN-based deep learning object detection approaches. Based on this, there are fast R-CNN and faster R-CNN for the faster speed in object detection. Besides, mask R-CNN is good at object instance segmentation. On the other hand, there are also other approaches such as Single Shot MultiBox Detector (SSD) and You Only Look Once (YOLO), of which YOLO achieves the fastest performance on detection so that it can perform real-time object detection on videos.
+Region-CNN (R-CNN) is one of the must-known CNN-based deep learning object detection approaches. Based on this, there are fast R-CNN and faster R-CNN for the faster speed in object detection. Besides, mask R-CNN is good at object instance segmentation. On the other hand, there are also other approaches such as Single Shot MultiBox Detector (SSD) and You Only Look Once (YOLO), of which YOLO achieves the faster performance on detection so that it can perform real-time object detection on videos. YOLO has improved to YOLOv2 and YOLOv3, which are the state-of-art algorithms.
 
 ## Region-CNN (R-CNN)
 
