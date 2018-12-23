@@ -24,4 +24,4 @@ To get more hands-on experience on object tracking, we can use the OpenCV librar
 ##Reference
 1. Smeulders, Arnold WM, et al. "Visual tracking: An experimental survey." IEEE transactions on pattern analysis and machine intelligence 36.7 (2014): 1442-1468.
 2. Yilmaz, Alper, Omar Javed, and Mubarak Shah. "Object tracking: A survey." Acm computing surveys (CSUR) 38.4 (2006): 13.
-3. 
+
