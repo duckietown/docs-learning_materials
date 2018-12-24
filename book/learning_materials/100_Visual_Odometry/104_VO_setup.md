@@ -1,5 +1,4 @@
-
-# VO : The Problem {#visual-odometry-problem: status=draft}
+# VO : The Problem {#visual-odometry-problem status=beta}
 
 The VO problem is modelled as a sequence of transformations
 
@@ -18,23 +17,23 @@ Image Sequence
 
 ## Output
 Camera Poses
-                
-Poses of the camera w.r.t. The initial frame at k = 0 
+
+Poses of the camera w.r.t. The initial frame at k = 0
 
 C 0:n = {C0, C1, …, Cn}  
- 	     
+
 Modelled by relative transformations T1:n
-                
+
                 T1:n = { T1,0, T2,1, …, Tn,(n-1)}      
 
 For simplicity, use Tk, k-1 as Tk      
-                              
-                              
+
+
 Rk, k-1 = 3D Rotational Matrix
                                                                                                                              Tk, k-1 = 3D Translation Vector              
 Concatenate to recover full trajectory  :    
 Cn = Cn-1 Tn                                      
-             
-             
-             
+
+
+
 In short : Estimate "relative motion" from image sequence   
