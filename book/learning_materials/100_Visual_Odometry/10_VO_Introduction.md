@@ -1,4 +1,4 @@
-# Visual Odometry : Introduction
+# Visual Odometry : Introduction {#visual-odometry: status=draft}
 
 ## Definition
 Visual odometry (VO) is the process of estimating the egomotion (pose) of an agent using only the input of a single or multiple cameras attached to it. 
