@@ -1,3 +1,5 @@
+# Visual Odometry Types {#visual-odometry-types: status=draft}
+
 ## VO vs V-SLAM
 
 There are fundamental differences between the problems of Visual Odometry and Visual SLAM (Self-localization and Mapping) in terms of the scope and applicability.
