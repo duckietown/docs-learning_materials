@@ -1,5 +1,5 @@
 
-### Problem
+# VO : The Problem
 
 The VO problem is modelled as a sequence of transformations
 
@@ -9,14 +9,14 @@ The VO problem is modelled as a sequence of transformations
 </figure>
 
 
-### Input     
+## Input     
 Image Sequence
 
 * Monocular : I_{0:n}  = { I_0, I_1, …, I_n }       
 * Stereo    : I_{l, 0:n}  = { I_{l,0}, I_{l,1}, …, I_{l,n} }
               I_{r, 0:n}  = { I_{r,0}, I_{r,1}, …, I_{r,n} }   
 
-### Output
+## Output
 Camera Poses
                 
 Poses of the camera w.r.t. The initial frame at k = 0 
