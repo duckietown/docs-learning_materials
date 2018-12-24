@@ -2,9 +2,9 @@
 
 Assigned: SLAM team
 
-## simultaneously Localization and Mapping (SLAM)
+## What is Simultaneous Localization and Mapping (SLAM)
 SLAM is a process which appears in a context where you have a robot in an unknown environment.
-In many cases, a meaningful task would need for the robot to navigate and interact with the environment. Such actions often make use of a type of map of the environment and at the same time use this map to compute it's own location. 
+In many cases, a meaningful task would need for the robot to navigate and interact with the environment. Such actions often make use of a type of map of the environment and at the same time use this map to compute the robot's location.
 
 To do so first requires representing the environment around the robot through a _mapping_ process. As the robot moves around, it will also need to perform a process called _localization_.
 
@@ -24,10 +24,10 @@ These two processes depend on each other, and have to be performed simultaneousl
 
 Seeing that the mapping process makes use the estimated position, and that the position is estimated with respect to the built map, this problem is hard and can be seen as a "chicken and egg" problem.
 
-SLAM relies on the idea that it is necessary to make use of external information combined with internal states estimation to perform well. It involves making multiple observations on the environment and fusing all of them, to build a consistent global map and correct various estimation drifts and errors. Here are some examples of the lane following demo by duckiebot with/without using external information from the map: 
+SLAM relies on the idea that it is necessary to make use of external information combined with internal states estimation to perform well. It involves making multiple observations on the environment and fusing all of them, to build a consistent global map and correct various estimation drifts and errors. Here are some examples of the lane following demo by duckiebot with/without using external information from the map:
 
 <figure class="Lane following demo with and without external information from the map">  
-    <figcaption>Why external information is important.</figcaption>
+    <figcaption>Illustration of why external information is important.</figcaption>
     <figure>
         <figcaption>1. Lane following demo without external info.</figcaption>
         <iframe style='width:20em; height:auto' src="https://www.youtube.com/embed/n2ZHlNfFjUo" frameborder="0" allowfullscreen="true"></iframe>
@@ -36,7 +36,7 @@ SLAM relies on the idea that it is necessary to make use of external information
         <figcaption>2. Lane following demo with external info.</figcaption>
         <iframe style='width:20em; height:auto' src="https://www.youtube.com/embed/guU9QsTT2vM" frameborder="0" allowfullscreen="true"></iframe>
     </figure>
-</figure> 
+</figure>
 
 
 ## SLAM today
@@ -46,7 +46,7 @@ There are several variants of SLAM. We are going to focus on the most popular on
 Visual SLAM usually relies on different types of cameras.
 There are a variety of vision sensors around, which output different types of informations, here are a few examples :
 
-*Monocular cameras* are the typical cameras you can find in a photography or smart phone camera. They create 2D images of the environment.
+*Monocular cameras* are the typical cameras you can find in a photography or smart phone camera. They usually use one lens and create 2D images of the environment.
 
 
 <figure class="flow-subfigures">  
@@ -62,8 +62,7 @@ There are a variety of vision sensors around, which output different types of in
 </figure>
 
 
-*Stero cameras* are cameras which make use of two lenses, similarly to what humans do. They are able to deduce depth from the two images taken and thus output 3D images.
-
+*Stero cameras* are cameras which make use of two lenses separated by a fixed known distance, similarly to how human's eyes work. They are able to deduce depth from the two images taken and thus output 3D images.
 
 <figure class="flow-subfigures">  
     <figcaption>Stereo cameras.</figcaption>
@@ -105,10 +104,11 @@ There are a variety of vision sensors around, which output different types of in
     </figure>
 </figure>
 
-These sensors are the most popular in current SLAM systems, even though other types exist and might be useful in future SLAM systems.
+These sensors are the most popular in current SLAM systems, even though other types exist and might be useful in future SLAM systems (looking at you event-based cameras!).
 
 
 ### Examples of successes stories of SLAM
+A common question nowadays is whether SLAM is already solved. Here we show some cases in which SLAM has been a success.
 
 *Kuka Navigation solution* is an autonomous transportation solution mostly used in warehouses (for example in Amazon's). This is one of the success stories up to today in which mapping a fixed and size limited 2D indoor environment with sufficient accuracy (less than 10cm) and sufficient robustness (say, low failure rate) while interacting with several humans and robots in a very controlled environment works well.
 <figure class="flow-subfigures">  
@@ -116,9 +116,9 @@ These sensors are the most popular in current SLAM systems, even though other ty
       <iframe style='width: 20em; height:auto' src="https://www.youtube.com/embed/kN9a7W_hnSQ" frameborder="0" allowfullscreen="true"></iframe>
 </figure>
 
-*Mars Exploration Rovers* aims at exploring the Martian surface and geology of planet Mars,  and similarly vision-base SLAM with slowly moving robots and visual inertial odometry can be considered mature research fields. In this example and also the previous one, the evironment is predictable, we don't have highly dynamic objects. 
-<figure class="flow-subfigures"> 
-    <figcaption>Mars Exploration Rovers</figcaption> 
+*Mars Exploration Rovers* aims at exploring the Martian surface and geology of planet Mars. In this environement again, vision-base SLAM with slowly moving robots and visual inertial odometry can be considered mature research fields. In this example like in the previous one, the evironment is predictable as we don't have highly dynamic objects.
+<figure class="flow-subfigures">
+    <figcaption>Mars Exploration Rovers</figcaption>
         <iframe style='width: 20em; height:auto' src="https://www.youtube.com/embed/APGswfxKqEw" frameborder="0" allowfullscreen="true"></iframe>
 </figure>
 
@@ -130,26 +130,19 @@ These sensors are the most popular in current SLAM systems, even though other ty
 </figure>
 
 
-*Autonomous Cars* self driving cars ARE not an absolute success story; however, we have seen many significant progress on autonomous vehicles in recent years. There are 6 different levels of driving automation: 
-	*Level 0* in this level there is no sustained vehicle control, only an automated system issue warnings (we've already have this feature in our cars)
-	*Level 1 ("hands on")* the automated system and the driver share the control of the vehicle, expamples are Cruise Control, Parking assistance and lane keeping assistance (We also achieved these feature in the recent years)
-	*Level 2 ("hands off")* the automated system takes full control of the vehicle but the driver must monitor the driving and be ready to intervene immediately at any time (this is simlar to a full cruise control so we have this as well)
-	*Level 3 ("eyes off")* the driver can safely turn their attention away from the driving tasks, the vehicle will handle situations that call for immediate reponse, like emergency breaking. However, the driver must still be prepared to intervene whithin some limited time.
-	*Level 4 ("mind off")* is similar to level 3 but no driver attention is required for safety. But the self driving is supported only in limited spatial areas or under special circumstances
-	*Level 5 ("steering wheel optional"):* no human intervention is required at all (similar to a robotic taxi)
+*Autonomous Cars* are not an absolute success story, neither are they solely SLAM based; however, we have seen many significant progress on autonomous vehicles in recent years.
 
-
-The last 3 levels are also achieved at some degrees but still lots of works to do since people are not confident enough to rely on a self driving cars in all situations sepcially when they are in a crowded street and needs more attention.
+One extremely important need for self driving cars is understanding their environment. This task is actually the same as the mapping phase of SLAM system, and has shown extremely good results in road environments.
 
 <br/>
 <figure class="flow-subfigures">  
-    <figcaption>Autonomous Cars</figcaption>
-        <iframe style='width: 20em; height:auto' src="https://www.youtube.com/embed/xsQvq4WlUYU" frameborder="0" allowfullscreen="true"></iframe>
+    <figcaption>Autonomous Tesla car's perception of the road.</figcaption>
+        <iframe style='width: 20em; height:auto' src="https://www.youtube.com/embed/_1MHGUC_BzQ" frameborder="0" allowfullscreen="true"></iframe>
 </figure>
 
 ## Issues with current solutions
 We have seen in the previous part that in several cases, we had SLAM systems performing very well and achieving tasks efficiently.
-These tasks were all very specific, in some restricted environment with some task specifications. However in general we argue that SLAM isn't fully solved, and present several aspects we believe are still not where they should be.
+These tasks were all very specific, in some restricted environment with some task specifications. However in general we argue that SLAM isn't fully solved, and present several aspects we believe are still not where we need them to be.
 
 ### Theoretical results
 Today when we have a SLAM system, we rely on quantitative results on some experiments to evaluate the system. We rarely have theoretical guarantees on how it actually performs.
@@ -159,7 +152,7 @@ Usually, SLAM systems are designed to be used in unknown environments, meaning t
 We want SLAM systems to be robust. Being that most environments they are likely to operate in are dynamic, as illustrated in the figures below :
 
 <figure>
-    <figcaption>Examples of cases that threaten robustness </figcaption>
+    <figcaption>Examples of cases that threaten robustness. </figcaption>
 	<figure>
         <figcaption>The same scene in summer vs winter. </figcaption>
 	    <img style='width:20em; height:auto' src="figures/winter_summer.png"/>
@@ -171,13 +164,13 @@ We want SLAM systems to be robust. Being that most environments they are likely 
 </figure>
 
 
-One same place can look very different visually depending on when it is seen. One dynamic effect is the change of winter, another one is the simple fact that some things can move. SLAM systems should therefore be able to rely on features which are more likely to be present and recognizable over time.
+One same place can look very different visually depending on when it is seen. One dynamic effect is the change of weather or seasons, another one is the simple fact that many elements move. SLAM systems should therefore be able to rely on features which are more likely to be present and recognizable over time.
 Currently, they mostly rely on geometric and visual features, which would completely fail to recognize the scenes shown here.
 
 Not only would the perception module fail with dynamic environments, but also the back end.
 In fact, in the case that an error in recognition is made (one place recognized as being the same when it is actually a different one), the optimization produces a very considerable error in the trajectory estimate.
 
-In the video below, you can see the image from a camera, as well as two estimated trajectories. Both trajectories are estimated with a state of the art SLAM optimizer (g2o), used in many popular solutions. In the top trajectory, no data association is made, and the estimation is very good. However in the bottom trajectory, three random association errors are added over time. We can see that even 
+In the video below, you can see the image from a camera, as well as two estimated trajectories. Both trajectories are estimated with a state of the art SLAM optimizer (g2o), used in many popular solutions. In the top trajectory, no data association error is made, and the estimation is very good. However in the bottom trajectory, three random association errors are added over time. We can see that even
 one error affects badly the whole estimate, which quickly becomes completely wrong.
 
 
@@ -211,20 +204,20 @@ While robustness and scalability might improve over time thanks to the advanceme
 You can see here how a modern SLAM system represents the environment:
 
 <figure class="flow-subfigures">  
-    <figcaption>ORB SLAM</figcaption>
+    <figcaption>ORB SLAM 2</figcaption>
     <iframe style='width: 20em; height:auto' src="https://www.youtube.com/embed/ufvPS5wJAx0" frameborder="0" allowfullscreen="true"></iframe>
 </figure>
 
-Note how the SLAM map differs from what a human would see in an image. The SLAM system sees lines and points which appear salient visually, while the human would recognize objects and how they are arranged.
-One core thing the SLAM system is missing is that it doesn't *understand* what it is seeing.
+Note how the SLAM map differs from what a human would see in an image. The SLAM system sees lines and points which appear salient visually, while the human would recognize walls and objects, and how they are arranged.
+One core thing the SLAM system is missing is that it doesn't *understand* what it is seeing, in the sense that elements it sees don't have meaning.
 Not only could understanding help make the representation more compact (leading to a more scalable system), it would make the map more meaningful (and possibly make the system more robust), and make the systems more intelligent.
 
 Here are examples of cases where having some kind of understanding of what is around can help SLAM:
 
 <figure class="flow-subfigures">  
-    <figcaption> Examples of cases where prior knowledge would help SLAM</figcaption>
+    <figcaption> Examples of cases where some kind of understanding would help SLAM.</figcaption>
         <figure>
-            <figcaption> A scene looking visually different.</figcaption>
+            <figcaption> A scene looking visually different. Understanding would allow to know what should remain and what could change.</figcaption>
             <img style='width:20em; height:auto' src="figures/winter_summer.png"/>
         </figure>
         <figure>
@@ -232,29 +225,29 @@ Here are examples of cases where having some kind of understanding of what is ar
             <img style='width:20em; height:auto' src="figures/bridge.png"/>
         </figure>
         <figure>
-            <figcaption> A door you know will open.</figcaption>
+            <figcaption> A door you should know will open.</figcaption>
             <img style='width:20em; height:auto' src="figures/auto_doors.png"/>
         </figure>
         <figure>
-            <figcaption> Someone you should listen to.</figcaption>
+            <figcaption> Someone you should listen to and understand.</figcaption>
             <img style='width:20em; height:auto' src="figures/policeman.png"/>
         </figure>
 </figure>
 
 ## Spatial AI, not just SLAM
-As we have seen, current SLAM solutions have some issues, and SLAM still needs some work on. A recent paper FutureMapping by Andrew Davison, 2018 introduced a new term: "*Spatial AI*". This paper describes considerations on where SLAM should be heading, and what we should aim at having.
+As we have seen, current SLAM solutions have some issues, and SLAM still needs some work on. A recent paper _FutureMapping: The Computational Structure of Spatial AI Systems_ by Andrew Davison, 2018 introduced a new term: "*Spatial AI*". This paper describes considerations on where SLAM should be heading, and what we should aim at having. As we detail further on, one major focus is the semantic representations which are necessary for future SLAM systems. This alone does not help solve all SLAM issues previously described, but is an important next step to make systems more useful.
 
 ### What is Spatial AI
-Even though "Spatial AI" is a new term, most robotics people often use it interchangeably with "Semantic SLAM". we, however, hope to make a clear distinction between current SLAM techniques, and the grand goal of Spatial AI.
+Even though "Spatial AI" is a new term, most robotics people often use it interchangeably with "Semantic SLAM". We, however, hope to make a clear distinction between current SLAM techniques, and the grand goal of Spatial AI.
 
-Here is a well-known AI meme, in the context of Spatial AI. 
+Here is a well-known AI meme, in the context of Spatial AI.
 
 <figure class="flow-subfigures">  
-    <figcaption> An example to show how Spatial AI evolved</figcaption>
+    <figcaption> Evolution of SLAM.</figcaption>
     <img style='width:20em; height:auto' src="figures/wallcrack.png"/>
 </figure>
 
-Just as AI concerns with building good representations, Spatial AI aims to have the right spatial representations (representation os the space in which a robot operates.) Spatial AI supercodes SLAM in te sense that, it's more than just localiztion and mapping.
+Just as AI concerns with building good representations, Spatial AI aims to have the right spatial representations (representation of the space in which a robot operates.) Spatial AI supercodes SLAM in the sense that, it's more than just localization and mapping.
 
 ### Differences with Geometric SLAM
 On different levels Spatial AI differs with geometric SLAM.
@@ -269,7 +262,7 @@ We resume the main differences in the following table:
     <th>Spatial AI</th>
   </tr>
   <tr>
-    <td><b>Representation</b></td> 
+    <td><b>Representation</b></td>
     <td>Feature</td>
     <td> </td>
     <td> </td>
@@ -303,15 +296,15 @@ We resume the main differences in the following table:
     <td>Sensors, Algorithms</td>
     <td>Sensors, Algorithms, Processors</td>
  </tr>
-</table> 
+</table>
 
 ### Recent works towards Spatial AI
 
 #### <b>Semantics help SLAM</b>
 
-Robotics always had the intuition and argued that semantics would play a crucial role in enhancing SLAM. The following video, from a very recent paper from Oxford, shows how semantics can help SLAM. This paper concerns with the task of monocular visual odometry estimation, i.e., estimating the 6-DoF (6 degress of freedom) motion of a camera, by using only monocular images as input. Traditional feature-based visual odometry/SLAM approaches rely on static scene features for reliable operation, and they fail miserably in the presence of moving objects. This paper leverages data from driving over a year, to train a deep neural network that classifies each image point as being stable or unstable, indicating how well it would contribute to a visual odometry estimate. The paper shows that using such a scheme, they obtain unprecedented performance improvements compared to traditional visual odometry approaches.  
+Robotics always had the intuition and argued that semantics would play a crucial role in enhancing SLAM. The following video, from a very recent paper from Oxford, shows how semantics can help SLAM. This paper concerns the task of monocular visual odometry estimation, i.e., estimating the 6-DoF (6 degress of freedom) motion of a camera, by using only monocular images as input. Traditional feature-based visual odometry/SLAM approaches rely on static scene features for reliable operation, and they fail miserably in the presence of moving objects. This paper leverages data from driving over a year, to train a deep neural network that classifies each image point as being stable or unstable, indicating how well it would contribute to a visual odometry estimate. The paper shows that using such a scheme, they obtain unprecedented performance improvements compared to traditional visual odometry approaches.  
 
-Following video shows how semantic information can help SLAM to perform better: 
+The following video shows how semantic information can help SLAM perform better:
 <figure class="flow-subfigures">  
     <figcaption>Semantic helps SLAM</figcaption>
         <iframe style='width: 20em; height:auto' src="https://www.youtube.com/embed/ebIrBn_nc-k" frameborder="0" allowfullscreen="true"></iframe>
@@ -336,7 +329,7 @@ And there are a few more people, who argue that SLAM and semantics help each oth
 </figure>
 
 #### <b>Object-oriented representation in SLAM </b>
-After this, have all the other work. "Higher-level representations that are object-oriented, will play a key role shaping the future of SLAM. Having explicit object representations enable robots to reason about objects, their mass, their affordances, and thus aid higher level tasks. 
+A higher level of representations, including objects and solid shapes, will play a key role in the future of SLAM. Object-level maps encode the fact that real objects are 3-dimensional rather that 1D and this allows associating physical notions such volume and mass to object which is an important factor for robots to interact with their environment. One work towards this is SLAM++:
 
 <figure class="flow-subfigures">  
     <figcaption>Object level map</figcaption>
@@ -352,11 +345,11 @@ Below is a video of Fusion++ work, an online object-level SLAM system that build
 
 ## Our Project: Line based SLAM in Duckietown
 
-The project is a graph based SLAM with semantic lines. Lines are recognized as part of the road, we have 3 different type of lines, *yellow lines* in the center of the road, *white lines* located on the sides of the road and *red lines*  which is a stop line. Then we make use them as a prior knowledge on duckietown. 
+The project is a graph based SLAM with semantic lines. Lines are recognized as part of the road, we have 3 different types of lines, *yellow lines* in the center of the road, *white lines* located on the sides of the road and *red lines*  which is a stop line. Then we make use them as a prior knowledge on duckietown.
 
 <figure class="flow-subfigures">  
     <figcaption>Different types of lines in Duckietown</figcaption>
         <img style='width:20em; height:auto' src="figures/lines.png"/>
 </figure>
 
-We use a line detection module using our line segment detector and compute a descriptor for each line then match those descriptors across images. use that to compute camera motion and also map those lines in 3D space. For that, we estimate the homography matrix to construct lanes and computing camera motion by measuring rotation and translation components. we're assuming the place recognition problem is already solved and we're using that to trigger global consistent optimization and integrate prior knowledge.
+We use a line detection module using our line segment detector and compute a descriptor for each line then match those descriptors across images. We then plan to use that to compute camera motion and also map those lines in 3D space. For that, we estimate the homography matrix to construct lanes and computing camera motion by measuring rotation and translation components. We're assuming the place recognition problem is already solved and we're using that to trigger global consistent optimization and integrate prior knowledge.
