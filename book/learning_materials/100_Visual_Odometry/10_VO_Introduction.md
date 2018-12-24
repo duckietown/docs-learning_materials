@@ -1,9 +1,9 @@
-## Visual Odometry : Introduction
+# Visual Odometry : Introduction
 
-### Definition
+## Definition
 Visual odometry (VO) is the process of estimating the egomotion (pose) of an agent using only the input of a single or multiple cameras attached to it. 
 
-### History
+## History
 
 * **1980** : First known VO real-time implementation on a robot by Hans Moraveck PhD thesis 
             (NASA/JPL) for Mars rovers using one sliding camera (sliding stereo).  
@@ -18,7 +18,7 @@ Visual odometry (VO) is the process of estimating the egomotion (pose) of an age
                wheels over time.
                VO integrates pixel displacements between image frames over time.
 
-### Applications
+## Applications
 
 * Robotics
 * Wearable computing
