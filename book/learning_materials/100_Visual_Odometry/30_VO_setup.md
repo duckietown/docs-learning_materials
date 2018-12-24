@@ -1,5 +1,5 @@
 
-# VO : The Problem
+# VO : The Problem {#visual-odometry-problem: status=draft}
 
 The VO problem is modelled as a sequence of transformations
 
