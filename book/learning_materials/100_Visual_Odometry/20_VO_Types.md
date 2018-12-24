@@ -1,4 +1,4 @@
-### VO vs V-SLAM
+## VO vs V-SLAM
 
 There are fundamental differences between the problems of Visual Odometry and Visual SLAM (Self-localization and Mapping) in terms of the scope and applicability.
 
@@ -8,7 +8,7 @@ Some noteworthy points in this regard are that :
 * VO can be used as a building block of SLAM 
 * VO is SLAM before closing the loop.
 
-### Types of Visual Odometry
+## Types of Visual Odometry
 
 #### Based on number of cameras  
 * Monocular
