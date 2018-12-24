@@ -1,4 +1,4 @@
-# Geometric Approaches to VO
+# Geometric Approaches to VO {#vo-geometric-approaches: status=draft}
 
 The geometric approaches to VO consider the geometry of the scene and can be further sub-classified into the following 
 
