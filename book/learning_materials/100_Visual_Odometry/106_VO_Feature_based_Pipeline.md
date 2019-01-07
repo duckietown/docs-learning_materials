@@ -101,7 +101,7 @@ The goal of this step is to find feature points and their respective corresponde
 
     This is an essential step after feature matching to ensures that the camera motion is estimated accurately.
     <br/>
-    
+
       - Random sample consensus (RANSAC) is the standard method for model estimation in the presence of outliers.
       <br/>
 
