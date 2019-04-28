@@ -1,3 +1,1 @@
-# Fleet level planning (placeholder) {#fleet-level-2 status=draft}
-
-Assigned: ETH
+# Fleet level planning {#fleet-level-2 status=beta}

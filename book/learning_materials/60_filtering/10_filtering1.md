@@ -1,6 +1,6 @@
 # Filtering 1 {#filtering1 status=draft}
 
-Assigned: Liam Paull
+
 
 TODO: Markov Property
 

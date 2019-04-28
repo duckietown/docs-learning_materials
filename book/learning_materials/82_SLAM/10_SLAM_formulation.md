@@ -1,3 +1,1 @@
-# SLAM - Problem formulation {#SLAM_formulation status=draft}
-
-Assigned: Liam Paull
+# SLAM - Problem formulation {#SLAM_formulation status=beta}

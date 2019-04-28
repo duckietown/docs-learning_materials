@@ -1,3 +1,1 @@
-# RRT {#RRT status=draft}
-
-Assigned: ETH
+# RRT {#RRT status=beta}

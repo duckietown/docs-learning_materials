@@ -1,4 +1,4 @@
-# Anti-Instagram {#anti-instagram-ttic status=draft}
+# Anti-Instagram {#anti-instagram-ttic status=ready}
 
 * We would like to improve the performance of our line detector in terms of illumination invariance.
 * We do this by computing a color filter when needed, and then apply it.

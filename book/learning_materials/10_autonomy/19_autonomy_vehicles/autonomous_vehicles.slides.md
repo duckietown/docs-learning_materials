@@ -1,6 +1,6 @@
-# Autonomous Vehicles {#autonomous-vehicles-slides status=draft type=slides nonumber=1}
+# Autonomous Vehicles {#autonomous-vehicles-slides status=ready type=slides nonumber=1}
 
-Maintainer: Andrea Censi
+
 
 ## Information
 

@@ -1,6 +1,6 @@
 # Symbols and conventions {#symbols-and-conventions status=ready}
 
-Assigned: Andrea Censi
+
 
 ## Conventions
 
