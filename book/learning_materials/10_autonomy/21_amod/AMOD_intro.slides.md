@@ -1,6 +1,6 @@
-# Autonomous Mobility on Demand: Market, Technology, and Society  {#amodintro-slides status=draft type=slides nonumber="1" label-name="Autonomous Mobility on Demand"}
+# Autonomous Mobility on Demand: Market, Technology, and Society  {#amodintro-slides status=ready type=slides nonumber="1" label-name="Autonomous Mobility on Demand"}
 
-Maintainer: Andrea Censi
+
 
 
 

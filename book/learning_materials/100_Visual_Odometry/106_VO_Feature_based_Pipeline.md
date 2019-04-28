@@ -1,4 +1,4 @@
-# Geometric feature-based VO Pipeline {#vo-feature-based-pipeline status=beta}
+# Geometric feature-based VO Pipeline {#vo-feature-based-pipeline status=ready}
 
 The indirect and sparse method of feature-based visual odometry is the most commonly employed technique for the VO problem. This is the approach used in most state-of-the-art VO systems as VO is an inherently geometric problem and the algorithms have straightforward computations.
 

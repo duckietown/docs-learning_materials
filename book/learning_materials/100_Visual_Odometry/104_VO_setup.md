@@ -1,6 +1,6 @@
-# VO : The Problem {#visual-odometry-problem status=beta}
+# VO : The Problem {#visual-odometry-problem status=ready}
 
-The VO problem is modelled as a sequence of transformations
+The VO problem is modeled as a sequence of transformations
 
 <figure class="stretch">
 <img src="figures/vo_scheme.png" style="width: 30em"/>

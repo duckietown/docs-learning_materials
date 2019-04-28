@@ -1,4 +1,4 @@
-# Duckiebot modeling {#duckiebot-modeling status=beta}
+# Duckiebot modeling {#duckiebot-modeling status=ready}
 
 Obtaining a mathematical model of the Duckiebot is important in order to (a) understand its behavior and (b) design a controller to obtain desired behaviors and performances, robustly.
 
@@ -134,7 +134,7 @@ For starters, recalling that $C^r = (c, 0)$ is the center of mass of the robot, 
 
 <div markdown="1">
 
- <col2 id='mod-dyn-notations' figure-id="tab:mod-dyn-notations" figure-caption="Notations for dynamic modeling of a differential drive robot">
+ <col2 id='mod-dyn-notations-table' figure-id="tab:mod-dyn-notations" figure-caption="Notations for dynamic modeling of a differential drive robot">
     <s>$(v_u, v_w)$</s>  <s>Longitudinal and lateral velocities of $C$, robot frame</s>
     <s>$(a_u, a_w)$</s>  <s>Longitudinal and lateral accelerations of $C$, robot frame</s>
     <s>$(F_{u_R}, F_{u_L})$</s>  <s>Longitudinal forces exerted on the vehicle by the right and left wheels</s>
@@ -394,13 +394,13 @@ For example, given in the input torques $(\tau_R, \tau_L)$, this model yields $v
 ## Differential drive robot dynamic model {#mod-dyn}
 While kinematics studies the properties of motions of geometric (i.e., massless) points, dynamical modeling takes into account the actual material distribution of the system. Once mass comes into play, motion is the result of the equilibrium of forces and torques. While different approaches can be used to derive these equations, namely the Lagrangian or Newtonian approaches (former based on energy considerations, latter on equilibrium of generalized forces), we choose to follow the Newtonian one here for it grants, arguably, a more explicit physical intuition of the problem. Obviously both methods lead to the same results when the same hypothesis are made.
 
-### Notations {#mod-dyn-notations}
+### Notations
 
 For starters, recalling that $C^r = (c, 0)$ is the center of mass of the robot, we define the relevant notations:
 
 <div markdown="1">
 
- <col2 id='mod-dyn-notations' figure-id="tab:mod-dyn-notations" figure-caption="Notations for dynamic modeling of a differential drive robot">
+ <col2 id='mod-dyn-notationsx' figure-id="tab:mod-dyn-notations" figure-caption="Notations for dynamic modeling of a differential drive robot">
     <s>$(v_u, v_w)$</s>  <s>Longitudinal and lateral velocities of $C$, robot frame</s>
     <s>$(a_u, a_w)$</s>  <s>Longitudinal and lateral accelerations of $C$, robot frame</s>
     <s>$(F_{u_R}, F_{u_L})$</s>  <s>Longitudinal forces exerted on the vehicle by the right and left wheels</s>

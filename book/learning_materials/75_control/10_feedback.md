@@ -1,3 +1,1 @@
-# Feedback control {#feedback-control status=draft}
-
-Assigned: Jacopo Tani
+# Feedback control {#feedback-control status=beta}

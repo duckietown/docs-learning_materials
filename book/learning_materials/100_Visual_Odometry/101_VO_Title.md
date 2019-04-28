@@ -1,4 +1,4 @@
-# Visual Odometry {#part:vo status=beta}
+# Visual Odometry {#part:vo status=ready}
 
 
 ### Objective

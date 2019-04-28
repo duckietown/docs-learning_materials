@@ -1,6 +1,6 @@
-# Modern signal processing {#modern_signal_processing status=draft}
+# Modern signal processing {#modern_signal_processing status=ready}
 
-Assigned: Andrea Censi
+
 
 
 <div class='requirements' markdown='1'>

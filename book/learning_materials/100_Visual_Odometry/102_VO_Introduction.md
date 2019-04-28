@@ -1,4 +1,4 @@
-# Visual Odometry : Introduction {#visual-odometry status=beta}
+# Visual Odometry : Introduction {#visual-odometry status=ready}
 
 ### Definition
 

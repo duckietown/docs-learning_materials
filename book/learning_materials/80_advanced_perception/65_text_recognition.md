@@ -1,3 +1,1 @@
-# Text recognition {#text_recognition status=draft}
-
-Assigned: Nick
+# Text recognition {#text_recognition status=beta}

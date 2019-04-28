@@ -1,6 +1,6 @@
-# Image filtering {#image-filtering status=draft}
+# Image filtering {#image-filtering status=beta}
 
-Assigned: Matt Walter
+
 
 **Background**: Discrete-time signal processing
 

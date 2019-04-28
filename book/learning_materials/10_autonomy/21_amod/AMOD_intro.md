@@ -1,8 +1,3 @@
-# Autonomous Mobility on Demand: Market, Technology, and Society  {#amodintro status=draft}
-
-Assigned: Andrea Censi
+# Autonomous Mobility on Demand: Market, Technology, and Society  {#amodintro status=ready}
 
 [Slides for this section](#amodintro-slides)
-
-
-

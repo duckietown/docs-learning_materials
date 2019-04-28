@@ -1,25 +1,22 @@
-# Object detection {#object_detection status=draft}
+# Object detection {#object_detection status=ready}
 
-Assigned: Nick and David
-
-Assigned: Yun
 
 ## Background
 
-Object detection helps autonomous vehicles detect different objects. The difference between object detection and classification is that detection algorithms not only output the class labels that the objects belong to, but also output the exact bounding boxes for the objects. 
+Object detection helps autonomous vehicles detect different objects. The difference between object detection and classification is that detection algorithms not only output the class labels that the objects belong to, but also output the exact bounding boxes for the objects.
 
 <figure class="stretch">
 <img src="2.png"/>
 <figcaption>Figure 2.1 Object Detection</figcaption>
 </figure>
 
-Generally, object detection can be solved by features of machine learning approaches such as SIFT, HOG, Haar-like features etc. However, deep learning approaches perform much better lately and will be illustrated here. 
+Generally, object detection can be solved by features of machine learning approaches such as SIFT, HOG, Haar-like features etc. However, deep learning approaches perform much better lately and will be illustrated here.
 
 Region-CNN (R-CNN) is one of the must-known CNN-based deep learning object detection approaches. Based on this, there are fast R-CNN and faster R-CNN for the faster speed in object detection. Besides, mask R-CNN is good at object instance segmentation. On the other hand, there are also other approaches such as Single Shot MultiBox Detector (SSD) and You Only Look Once (YOLO), of which YOLO achieves the faster performance on detection so that it can perform real-time object detection on videos. YOLO has improved to YOLOv2 and YOLOv3, which are the state-of-art algorithms.
 
 ## Region-CNN (R-CNN)
 
-For object detection, what we need are bounding box size and location. Conventionally, for each image, there is a sliding window to search every position within the image shown in Figure 3. However, it is not efficient because different objects or even the same kind objects can have different sizes or aspect ratios. The different sizes and ratios affect effective window size, which can be extremly slow using CNN at each location for classification. 
+For object detection, what we need are bounding box size and location. Conventionally, for each image, there is a sliding window to search every position within the image shown in Figure 3. However, it is not efficient because different objects or even the same kind objects can have different sizes or aspect ratios. The different sizes and ratios affect effective window size, which can be extremly slow using CNN at each location for classification.
 
 <figure class="stretch">
 <img src="3.png"/>
@@ -27,17 +24,17 @@ For object detection, what we need are bounding box size and location. Conventio
 </figure>
 
 Instead, R-CNN uses selective search to generate about 2K region proposals which are bounding boxes for image classification. Then, for each bounding box, image classification is done by CNN. Finally, each bounding box can be refined using regression shown in the pipeline below:
- 
+
  <figure class="stretch">
  <img src="4.png"/>
  <figcaption>Figure 2.3 Pipeline of R-CNN</figcaption>
  </figure>
- 
+
  For the selective search:
  ** Generate initial sub-segmentation. Many candidate regions are generated. **
  ** Greedy algorithm is used to recursively combine similar regions into larger ones. **
  ** The generated regions are used to produce final candidate region proposals. **
-  
+
 <figure class="stretch">
 <img src="5.png"/>
 <figcaption>Figure 2.4 R-CNN classification</figcaption>
@@ -50,7 +47,7 @@ As a result, 2000 candidate region proposals are wraped into a square and fed in
 <figcaption>Figure 2.5 R-CNN classification and detection</figcaption>
 </figure>
 
-## Fast R-CNN 
+## Fast R-CNN
 
 Since a huge time of training is required because you need to classify 2000 region proposals per image, the algorithm is slow and not efficient. As a result, Fast R-CNN is proposed by feeding the entire input image to the CNN for generating the feature map instead of proposed regions. Besides, RoI and softmax layer are used for feature extraction and classification.
 
@@ -59,9 +56,9 @@ Since a huge time of training is required because you need to classify 2000 regi
 <figcaption>Figure 2.6 Fast R-CNN</figcaption>
 </figure>
 
-## Faster R-CNN 
+## Faster R-CNN
 
-However, R-CNN and Fast R-CNN both use selective search algorithm which is very time-consuming. As a result, a seperate network is used to predict region proposals replacing the selective search for efficiency. 
+However, R-CNN and Fast R-CNN both use selective search algorithm which is very time-consuming. As a result, a seperate network is used to predict region proposals replacing the selective search for efficiency.
 
 <figure class="stretch">
 <img src="8.png"/>
@@ -90,7 +87,7 @@ YOLO takes and image and split it into an S*S grid and in each grid we take m bo
 
 Due to the limitation of YOLO, an improving version of YOLO is proposed for better recall and localization while mantaining the classification accuracy. The structure is 19 convolutional and 5 maxpooling layers.
 
-The improvements are made by using achors, so that it does not predict bounding box coordinates but offsets on priors. The box dimensions of priors are learnt by running k-means clustering. Besides, batch normalization is used. The input is replaced by a higher resolution input of 416* 416 instead of 224* 224. Besides, multi-scale training is implemented. 
+The improvements are made by using achors, so that it does not predict bounding box coordinates but offsets on priors. The box dimensions of priors are learnt by running k-means clustering. Besides, batch normalization is used. The input is replaced by a higher resolution input of 416* 416 instead of 224* 224. Besides, multi-scale training is implemented.
 
 Due to these changes, the recall has been improved while the speed is still fast, and it is great for detecting small objects.
 
@@ -108,11 +105,9 @@ The improvement is aimed at increasing accuracy in small objects by YOLOv3. Ther
 <figcaption>Figure 2.11 Sppeed comparision</figcaption>
 </figure>
 
-YOLOv3 is slower than before but enough fast for real time detection with a good accuracy in detecting small objects. 
+YOLOv3 is slower than before but enough fast for real time detection with a good accuracy in detecting small objects.
 
 <figure class="stretch">
 <img src="13.png"/>
 <figcaption>Figure 2.12 Inference time</figcaption>
 </figure>
-
-
