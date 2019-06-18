@@ -1,3 +1,3 @@
-# Learning materials {#book:learning-materials status=ready}
+# Autonomy Basics with Duckietown {#book:learning-materials status=ready}
 
 Maintainer: Liam Paull
