@@ -1,6 +1,6 @@
 # Filtering 2 {#filtering2 status=draft}
 
-Assigned: Liam Paull
+
 
 TODO: MAP estimation
 

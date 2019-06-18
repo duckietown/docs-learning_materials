@@ -1,8 +1,7 @@
-# From SLAM to Spatial AI {#From_SLAM_to_SpatialAI status=draft}
-
-Assigned: SLAM team
+# From SLAM to Spatial AI {#From_SLAM_to_SpatialAI status=ready}
 
 ## What is Simultaneous Localization and Mapping (SLAM)
+
 SLAM is a process which appears in a context where you have a robot in an unknown environment.
 In many cases, a meaningful task would need for the robot to navigate and interact with the environment. Such actions often make use of a type of map of the environment and at the same time use this map to compute the robot's location.
 

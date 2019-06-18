@@ -1,5 +1,5 @@
 
-# Learning Approaches to VO {#vo-learning-approaches status=beta}
+# Learning Approaches to VO {#vo-learning-approaches status=ready}
 
 * Learning can be used in any stage of the odometry pipeline such as:     
     - features detection

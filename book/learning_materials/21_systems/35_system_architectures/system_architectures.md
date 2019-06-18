@@ -1,6 +1,6 @@
-# System architectures basics {#system-architectures-basics status=draft}
+# System architectures basics {#system-architectures-basics status=ready}
 
-Assigned: Andrea Censi
+
 
 <div class='requirements' markdown="1">
 

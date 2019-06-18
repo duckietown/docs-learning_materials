@@ -1,6 +1,6 @@
-# Line Detection {#line_detection status=draft}
+# Line Detection {#line_detection status=beta}
 
-Assigned: Matt Walter
+
 
 
 **Topics**:

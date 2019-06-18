@@ -1,3 +1,1 @@
-# Feature extraction {#feature_extraction status=draft}
-
-Assigned: Matt Walter
+# Feature extraction {#feature_extraction status=beta}

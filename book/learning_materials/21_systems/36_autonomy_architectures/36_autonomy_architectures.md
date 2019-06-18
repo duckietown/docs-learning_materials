@@ -1,6 +1,6 @@
-# Autonomy architectures {#autonomy-architectures status=draft}
+# Autonomy architectures {#autonomy-architectures status=ready}
 
-Assigned: Andrea Censi
+
 
 
 ## The state of the art in autonomy architectures

@@ -1,6 +1,6 @@
-# Autonomous Vehicles {#autonomous-vehicles status=draft}
+# Autonomous Vehicles {#autonomous-vehicles status=ready}
 
-Maintainer: Andrea Censi
+
 
 [Slides for this section.](#autonomous-vehicles-slides)
 
@@ -26,7 +26,7 @@ Here's a non-exhaustive list of some of companies that are actively developing a
 
 ## Levels of Autonomy {#autonomy-levels}
 
-Before even discussing any detailed notion of autonomy, we have to specify exactly what we are talking about. In the United States, the governing body is the NHTSA, and they have recently (Oct 2016) redefined the so-called "levels of autonomy" for self-driving vehicles. 
+Before even discussing any detailed notion of autonomy, we have to specify exactly what we are talking about. In the United States, the governing body is the NHTSA, and they have recently (Oct 2016) redefined the so-called "levels of autonomy" for self-driving vehicles.
 
 In broad terms, they are as follows
 
@@ -43,4 +43,3 @@ driver conduct some parts of the driving task;
 ## The two paths to autonomy
 
 TODO for Andrea Censi: insert slides of the two paths
-

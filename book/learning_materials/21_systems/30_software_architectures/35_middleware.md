@@ -1,6 +1,6 @@
-# Middleware {#middleware status=draft}
+# Middleware {#middleware status=ready}
 
-Assigned: Andrea Censi
+
 
 <div class='requirements' markdown='1'>
 

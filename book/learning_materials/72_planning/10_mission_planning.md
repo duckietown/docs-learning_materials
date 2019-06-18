@@ -1,3 +1,1 @@
-# Mission planning {#mission_planning status=draft}
-
-Assigned: ETH
+# Mission planning {#mission_planning status=beta}

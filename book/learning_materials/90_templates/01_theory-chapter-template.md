@@ -194,6 +194,6 @@ Do not include a reference chapter. References are automatically compiled to [th
 
 Author: Jacopo Tani
 
-Maintainer: Jacopo Tani
+
 
 Point of Contact: Jacopo Tani

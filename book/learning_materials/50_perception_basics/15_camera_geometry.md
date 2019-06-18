@@ -1,6 +1,6 @@
-# Camera geometry {#camera-geometry status=draft}
+# Camera geometry {#camera-geometry status=ready}
 
-Assigned: Matt Walter
+
 
 Note: We could break this up into separate sub-sections for (prospective) projection and lenses.
 

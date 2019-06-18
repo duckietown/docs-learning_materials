@@ -1,4 +1,4 @@
-# Geometric Approaches to VO {#vo-geometric-approaches status=beta}
+# Geometric Approaches to VO {#vo-geometric-approaches status=ready}
 
 The geometric approaches to VO consider the geometry of the scene. These take advantage of the visual geometry in the camera-world model. They can be further sub-classified into the following
 

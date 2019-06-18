@@ -1,6 +1,6 @@
-# Modularization and Contracts {#modules-and-contracts status=draft}
+# Modularization and Contracts {#modules-and-contracts status=ready}
 
-Assigned: Andrea Censi
+
 
 ## Monolithic vs modular design
 

@@ -1,6 +1,6 @@
-# Representations  {#representations status=draft}
+# Representations  {#representations status=ready}
 
-Assigned: Matt Walter
+
 
 <div class="requirements" markdown="1">
 

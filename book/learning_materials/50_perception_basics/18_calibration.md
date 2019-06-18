@@ -1,6 +1,6 @@
-# Camera calibration {#camera-calibration status=draft}
+# Camera calibration {#camera-calibration status=ready}
 
-Assigned: Matt Walter
+
 
 Note: The discussion of intrinsic and extrinsic models could be moved up to the geometry subsection
 

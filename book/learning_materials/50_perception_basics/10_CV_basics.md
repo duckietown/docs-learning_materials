@@ -1,6 +1,6 @@
-# Computer vision basics {#CV_basics status=draft}
+# Computer vision basics {#CV_basics status=ready}
 
-Assigned: Matt Walter
+
 
 For the interested reader, there are several excellent books that discuss fundamental topics in computer vision. These include (in no particular order), [Computer Vision: Algorithims and Applications](#bib:szeliski10) (available online), [Computer Vision: A Modern Approach](#bib:forsyth11) and [Multiple View Geometry in Computer Vision](#bib:hartley04).
 

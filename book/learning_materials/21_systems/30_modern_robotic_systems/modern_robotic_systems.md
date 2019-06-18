@@ -1,6 +1,6 @@
-# Modern Robotic Systems {#modern-robotic-systems status=draft}
+# Modern Robotic Systems {#modern-robotic-systems status=ready}
 
-Assigned: Andrea Censi
+
 
 <div class='requirements' markdown='1'>
 

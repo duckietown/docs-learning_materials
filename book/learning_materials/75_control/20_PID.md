@@ -1,3 +1,1 @@
-# PID Control {#PID-control status=draft}
-
-Assigned: Jacopo Tani
+# PID Control {#PID-control status=beta}

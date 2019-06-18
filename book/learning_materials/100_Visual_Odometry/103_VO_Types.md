@@ -1,4 +1,4 @@
-# Visual Odometry Types {#visual-odometry-types status=beta}
+# Visual Odometry Types {#visual-odometry-types status=ready}
 
 ### VO vs V-SLAM
 

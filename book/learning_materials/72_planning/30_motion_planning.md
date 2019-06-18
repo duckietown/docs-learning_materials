@@ -1,3 +1,1 @@
-# Motion planning {#motion_planning status=draft}
-
-Assigned: ETH
+# Motion planning {#motion_planning status=beta}

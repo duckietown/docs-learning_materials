@@ -1,6 +1,6 @@
 # Autonomy overview {#autonomy-overview status=ready}
 
-Assigned: Liam Paull
+
 
 This unit introduces some basic concepts ubiquitous in autonomous vehicle navigation.
 

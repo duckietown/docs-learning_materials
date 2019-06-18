@@ -1,4 +1,4 @@
-# Geometric Motion Estimation {#vo-motion-estimation status=beta}
+# Geometric Motion Estimation {#vo-motion-estimation status=ready}
 
 The methods described below assume the perspective camera model for vision. But, these can be extended to other camera models depending on the underlying technique.
 
