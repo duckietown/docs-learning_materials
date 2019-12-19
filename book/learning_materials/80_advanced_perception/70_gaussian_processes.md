@@ -20,7 +20,7 @@ discussed below.
 ### Gaussian process regression models
 
 A Gaussian process is an infinite collection of random variables, any finite
-combination of which are jointly normally distributed [[1]](#R1).  Therefore,
+combination of which are jointly normally distributed [[1]](#1).  Therefore,
 the process may be completely parameterized by its mean and covariance, 
 
 $$f (\mathbf{x}) \sim \mathcal{GP} \big( m (\mathbf{x} , k (\mathbf{x},
