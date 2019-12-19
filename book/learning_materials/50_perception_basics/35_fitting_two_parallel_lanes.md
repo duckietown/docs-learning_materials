@@ -43,4 +43,9 @@ This works relatively well, and is definitely much more robust than individually
 2. Outlying white and yellow segments can still influence the estimate.
 3. Not very appropriate for corners/curved roads.
 
-Point 1 can be addressed by parameterizing the lines a different way, but this might result in a constrained least squares problem. Point 2 can be addressed by somehow combining this method with  RANSAC procedure, and point 3 can be addressed by using a more sophisticated model than a straight line, such as a polynomial or a Bezier curve. If doing so, a method of enforcing the parallel and separation distance constraints is needed.
+Point 1 can be addressed by parameterizing the lines a different way, but this might result in a constrained least squares problem. Point 2 can be addressed by somehow combining this method with  RANSAC procedure, and point 3 can be addressed by using a more sophisticated model than a straight line, such as a polynomial. If doing so, a method of enforcing the parallel and separation distance constraints is needed.
+
+<figure>
+    <figcaption>Example</figcaption>
+    <img style='width:50em' src="fitting_two_lanes_example.png"/>
+</figure>
