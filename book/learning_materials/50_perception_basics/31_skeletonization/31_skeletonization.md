@@ -47,7 +47,7 @@ The HSV thresholding usually returns a large number of detections, many of which
         <img style='width:120px' src="black_mask.png"/>
     </figure>
     <figure>
-        <figcaption>Closing</figcaption>
+        <figcaption>Opening</figcaption>
         <img style='width:120px' src="black_mask_dilated.png"/>
     </figure>
     <figure>
