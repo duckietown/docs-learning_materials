@@ -1,4 +1,4 @@
-# Bézier curves for richer state estimation{#bezier status=ready}
+# Bézier curves {#bezier status=ready}
 
 We would like to improve the performance of the state estimation system by using the full lines rather than just trying to fit a straight lane on a curved path.
 
@@ -10,7 +10,7 @@ A full derivation of the different blocks can be found [here](https://github.com
 
 ## Inputs
 
-This node uses a preprocessed view of the video feed, wherein the pixels have been clustered into the different lines (with the color known) and projected into the robot frame. In the [proposed implementation](https://github.com/bdura/merganser), we use a skeletonisation of the patches to reduce the computational load.
+This node uses a preprocessed view of the video feed, wherein the pixels have been clustered into the different lines (with the color known) and projected into the robot frame. In the [proposed implementation](https://github.com/bdura/merganser), we use a skeletonisation of the patches to reduce the computational load. See [](#line-detection-skeletonization) for details.
 
 In the case of the Kalman filter formulation, we also need to subscribe to the commands of the robot (for the process model).
 
@@ -18,7 +18,7 @@ In the case of the Kalman filter formulation, we also need to subscribe to the c
 
 ### Definitions
 
-Recall the recursive definition of a Bézier curve. Let $\mathrm{Bezier}_{\mathbf{p}_0,\mathbf{p}_1,\dots, \mathbf{p}_n} : [0,1] \to \R^2$ be the Bézier curve defined by the control points $\mathbf{p}_0,\mathbf{p}_1,\dots, \mathbf{p}_n$. Then:
+Recall the recursive definition of a Bézier curve. Let $\mathrm{Bezier}_{\mathbf{p}_0,\mathbf{p}_1,\dots, \mathbf{p}_n} : [0,1] \to \mathbb{R}^2$ be the Bézier curve defined by the control points $\mathbf{p}_0,\mathbf{p}_1,\dots, \mathbf{p}_n$. Then:
 
 \begin{align*}
     \mathrm{Bezier}_\mathbf{p}(\alpha) &= \mathbf{p} \\
@@ -31,7 +31,7 @@ Which decomposes into the following explicit definition:
     \mathrm{Bezier}_{\mathbf{p}_0:\mathbf{p}_n}(\alpha) = \sum_{i=0}^n {n \choose i} \alpha^i (1-\alpha)^{n-i} \mathbf{p}_i
 \end{equation}
 
-$\displaystyle b_i^n(\alpha) = {n \choose i} \alpha^i (1-\alpha)^{n-i}$ forms the \textit{Bernstein polynomial basis}.
+$\displaystyle b_i^n(\alpha) = {n \choose i} \alpha^i (1-\alpha)^{n-i}$ forms the *Bernstein polynomial basis*.
 
 
 ### Fitting the lines
@@ -137,8 +137,8 @@ The general process to fit the curve is as follows:
 The process model is easy to derive, using the standard properties of the multivariate Gaussian distribution. Hence:
 
 \begin{align}
-    \Aboxed{\bar\mu_{t+1} &= \mathbf{R} \mu_t + \mathbf{t}} & \text{and}& &
-    \Aboxed{\bar\Sigma_{t+1} &= \mathbf{R} \Sigma_t \mathbf{R}^\top}
+    \bar\mu_{t+1} &= \mathbf{R} \mu_t + \mathbf{t} & \text{and}& &
+    \bar\Sigma_{t+1} &= \mathbf{R} \Sigma_t \mathbf{R}^\top
 \end{align}
 
 ![Process model](resource/process-model.png)
@@ -159,7 +159,7 @@ as the values for $\alpha$.
 With the above assumptions, the we can compute the covariance for the observation noise:
 
 \begin{equation}
-    \boxed{\mathrm{Cov} \left[ \varepsilon_o \right] = \frac{1}{|C_t|} \sum_{\mathbf{c} \in C_t} (\mathbf{c} - \mathrm{Bezier}_{\bar\theta_{t+1}}(\alpha_\mathbf{c})}
+    \boxed{\mathrm{Cov} \left[ \varepsilon_o \right] = \frac{1}{|C_t|} \sum_{\mathbf{c} \in C_t} (\mathbf{c} - \mathrm{Bezier}_{\bar\theta_{t+1}}(\alpha_\mathbf{c}))}
 \end{equation}
 
 ![Observation model](resource/probabilistic.png)
