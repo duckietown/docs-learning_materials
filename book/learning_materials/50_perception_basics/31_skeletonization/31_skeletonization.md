@@ -6,7 +6,7 @@ The [segment-based line detection](#line_detection) pipeline available in the [`
 
 In order to retain the morphology of the lines, we can extract their **skeletons**. In [](#fig:pipeline-overview), we show the overall pipeline to detect, filter and compress the lines. The output of this pipeline is a set of skeletons that correspond to the different lines.
 
-<figure figure-id="fig:pipeline-overview">
+<figure id="fig:pipeline-overview">
     <figcaption>Pipeline overview</figcaption>
     <img style="width:100%" src="figures/pipeline-overview.png"/>
 </figure>
@@ -92,7 +92,7 @@ The line filtering also follows three steps:
 
 The [skeletonization](https://homepages.inf.ed.ac.uk/rbf/HIPR2/skeleton.htm) is a step that removes most of the pixels in a binary image, while preserving the morphology and size of the original region. This returns the simplest pixel representation of the lines, reduced to a 1-pixel line. This representation is still in pixel space, instead of being segments, and can therefore handle curves. We use the skeletonization method described in [](#bib:lee1994skeletonization), initially introduced for 3D-surfaces, but adapted to two-dimensionial objects. The final skeletons are shown in [](#fig:skeletons).
 
-<figure figure-id="fig:skeletons">
+<figure id="fig:skeletons">
     <figcaption>Skeletonization</figcaption>
     <img style="width:180px" src="figures/skeletons.png"/>
 </figure>
@@ -103,7 +103,7 @@ Note that since skeletonization retains the morphology of the original masks, it
 
 The skeletons detected in [](#skeletonization-skeletonization) are still live in pixel space. Even though we have segmented the lines according to their color, it might be useful to cluster them further (e.g. to distinguish between the left and right white line). For clustering, we can use the simple [DBSCAN algorithm](https://en.wikipedia.org/wiki/DBSCAN). This can be easily implemented using a combination of standard operations: a dilation with a large kernel and connected component detection. The final clusters of skeletons are shown in [](#fig:clusters).
 
-<figure figure-id="fig:clusters">
+<figure id="fig:clusters">
     <figcaption>Clustering</figcaption>
     <img style="width:180px" src="figures/clusters.png"/>
 </figure>
