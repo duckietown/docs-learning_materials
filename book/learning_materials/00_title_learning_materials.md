@@ -1,3 +1,3 @@
-# Autonomy Basics with Duckietown {#book:learning-materials status=ready}
+# Autonomy Basics with Duckietown {#book:book status=ready}
 
 
